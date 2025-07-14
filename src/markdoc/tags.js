@@ -1,6 +1,7 @@
 import { Callout } from '@/components/Callout'
 import { AntonioChart } from '@/components/AntonioChart'
 import { AndersonChart } from '@/components/AndersonChart'
+import { FixedWingBCFRouteChart } from '@/components/FixedWingBCFRouteChart'
 
 import { QuickLink, QuickLinks } from '@/components/QuickLinks'
 
@@ -22,6 +23,9 @@ const tags = {
   },
   andersonchart: {
     render: AndersonChart,
+  },
+  fwbcfroute: {
+    render: FixedWingBCFRouteChart,
   },
   figure: {
     selfClosing: true,

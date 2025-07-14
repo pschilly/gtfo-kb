@@ -110,9 +110,11 @@ PROCEEDING AS FRAGGED //
 
 ## Navigation & Sight Seeing
 
+### Route
+
 The navigation and sight seeing portion of the check flight is broken down into 4 seperate waypoints, taking you on a journey of approximately 200 NM. Take a look at the map:
 
-<< MAP GOES HERE >>
+{% fwbcfroute /%}
 
 Given that you will have to visually identify what is at each waypoint, it is crucial that you select your altitude accordingly based on what tools you have available. For those who bring along a targeting pod, you may be able to go higher than those who are relying on just their eyeballs. This is entirely up to you which direction you want to go with it.
 
@@ -353,14 +355,6 @@ CLEAR "06L" AT "HOTEL" TAXING TO PARKING //
 
 Once you have safely cleared the runway and taxi'd to the designated parking area, go ahead and shut down your jet. The debrief will likely happen while you are shutting down.
 
-## Debrief
+## Conclusion
 
-This is the section of the check flight where your instructor will give you feedback on how you did, if there are areas for improvement and most importantly whether or not you passed.
-
-Once you have passed your check flight, you will be assigned to a squadron based on the main airframe you wish to fly during campaign sorties within the Task Force.
-
-Being assigned to a specific squadron **does not mean** you cannot fly any other airframes. It just gives you a home for further training & acts as your main stay for organized campaign sorties, furthermore, if you feel like swapping at a later time - no worries!
-
-Baring any unforseen circumstances...
-
-# Welcome to GTFO!
+Once you have completed your check flight, your instructor will provide you some feedback as well as the much anticipated go / no-go decision. So long as they have no reservations, you will be assigned to a squadron based on the airframe you wish to fly the most and can immediately begin participating in more events within the task force.
