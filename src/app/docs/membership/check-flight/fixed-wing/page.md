@@ -1,9 +1,9 @@
 ---
-title: Check Flight
+title: Fixed Wing Check Flight
 nextjs:
   metadata:
-    title: Check Flight
-    description: A basic check ride to ensure that prospective members have basic airmanship and communication skills in order to succeed.
+    title: Fixed Wing Check Flight
+    description: A basic check flight conducted in a fixed wing aircraft. This ensures that prospective members have a base understanding of both airfield operations and radio communications. It also allows us to ensure folks are proficient in conversational English, which is a requirement for membership at Global Task Force Overlord.
 ---
 
 # Fixed Wing Check Flight Procedures
