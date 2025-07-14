@@ -82,7 +82,12 @@ export function Hero() {
                 unoptimized
                 priority
               />
-              <Image src={GTFOLogo} alt="" className="h-auto w-64" priority />
+              <Image
+                src={GTFOLogo}
+                alt=""
+                className="mx-auto h-auto max-w-96"
+                priority
+              />
 
               {/* <div className="absolute inset-0 rounded-2xl bg-linear-to-tr from-sky-300 via-sky-300/70 to-blue-300 opacity-10 blur-lg" />
               <div className="absolute inset-0 rounded-2xl bg-linear-to-tr from-sky-300 via-sky-300/70 to-blue-300 opacity-10" /> */}
