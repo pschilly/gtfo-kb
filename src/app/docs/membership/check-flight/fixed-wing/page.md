@@ -356,3 +356,12 @@ Once you have safely cleared the runway and taxi'd to the designated parking are
 ## Conclusion
 
 Once you have completed your check flight, your instructor will provide you some feedback as well as the much anticipated go / no-go decision. So long as they have no reservations, you will be assigned to a squadron based on the airframe you wish to fly the most and can immediately begin participating in more events within the task force.
+
+---
+
+#### Revisions
+
+| #     | Short Summary                      | Date of Approval |
+| :---- | ---------------------------------- | ---------------: |
+| 0.0.2 | KB & Check Flight Procedure Update |        14 Jul 25 |
+| 0.0.1 | Document Creation                  |        01 Dec 24 |
