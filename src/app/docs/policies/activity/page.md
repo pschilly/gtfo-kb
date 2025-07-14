@@ -19,3 +19,13 @@ However, no one is _locked_ into a specific position and if their real-life comm
 > Although the expectation is a single event, it is **highly encouraged** that an even higher number of events are held.
 >
 > **Failure to do so, will result in removal from your leadership role.**
+
+---
+
+#### Revisions
+
+| #     | Short Summary                      | Date of Approval |
+| :---- | ---------------------------------- | ---------------: |
+| 0.0.3 | KB & Check Flight Procedure Update |        14 Jul 25 |
+| 0.0.2 | Squadron Leadership Update         |        08 Jun 25 |
+| 0.0.1 | Document Creation                  |        01 Dec 24 |
