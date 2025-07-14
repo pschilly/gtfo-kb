@@ -39,7 +39,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={clsx(
-        'bg-topo h-full bg-cover bg-fixed antialiased',
+        'bg-topo dark h-full bg-cover bg-fixed antialiased',
         inter.variable,
         lexend.variable,
       )}
