@@ -6,8 +6,6 @@ nextjs:
     description: A basic check flight conducted in a fixed wing aircraft. This ensures that prospective members have a base understanding of both airfield operations and radio communications. It also allows us to ensure folks are proficient in conversational English, which is a requirement for membership at Global Task Force Overlord.
 ---
 
-# Fixed Wing Check Flight Procedures
-
 In order to be successful in your check flight, please ensure the following is done prior to starting:
 
 - All [required modifications](/docs/resources/modifications) installed and operational.
