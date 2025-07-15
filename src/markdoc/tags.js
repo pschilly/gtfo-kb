@@ -2,6 +2,7 @@ import { Callout } from '@/components/Callout'
 import { AntonioChart } from '@/components/AntonioChart'
 import { AndersonChart } from '@/components/AndersonChart'
 import { FixedWingBCFRouteChart } from '@/components/FixedWingBCFRouteChart'
+import { OrgChart } from '@/components/OrgChart'
 
 import { QuickLink, QuickLinks } from '@/components/QuickLinks'
 
@@ -17,6 +18,9 @@ const tags = {
       },
     },
     render: Callout,
+  },
+  orgchart: {
+    render: OrgChart,
   },
   antoniochart: {
     render: AntonioChart,
