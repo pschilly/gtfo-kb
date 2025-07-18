@@ -60,7 +60,6 @@ export const navigation = [
     links: [
       { title: 'Liveries', href: '/docs/resources/liveries' },
       { title: 'Modifications', href: '/docs/resources/modifications' },
-      { title: 'Mission Making', href: '/docs/resources/mission-making' },
     ],
   },
 ]
