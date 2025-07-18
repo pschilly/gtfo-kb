@@ -47,9 +47,9 @@ Departure for your check flight will take place on runway **06L** - due to the n
 ```radio
 --145.00--
 
-ANTONIO TRAFFIC //
-CHEVY 1-1 //
-TAXING TO RUNWAY "06L" VIA "DELTA" "KILO" FOR DEPARTURE //
+ANTONIO TRAFFIC, CHEVY 1-1 //
+  TAXING TO RUNWAY "06L" VIA "DELTA" "KILO" FOR DEPARTURE //
+ANDERSON TRAFFIC //
 ```
 
 - You may now begin taxing towards **06L** - knowing that you will likely have to cross **06R**, it is expected that you stop at the hold short line, and once again call out to Antonio Traffic that you are crossing a potentially active runway:
@@ -57,9 +57,9 @@ TAXING TO RUNWAY "06L" VIA "DELTA" "KILO" FOR DEPARTURE //
 ```radio
 --145.00--
 
-ANTONIO TRAFFIC //
-CHEVY 1-1 //
-CROSSING "06R" AT "DELTA" //
+ANTONIO TRAFFIC, CHEVY 1-1 //
+  CROSSING "06R" AT "DELTA" //
+ANDERSON TRAFFIC //
 ```
 
 - Due to the fact that Antonio has two parallel runways, you must once again hold short, this time of **06L** and declare that you are crossing:
@@ -67,9 +67,9 @@ CROSSING "06R" AT "DELTA" //
 ```radio
 --145.00--
 
-ANTONIO TRAFFIC //
-CHEVY 1-1 //
-CROSSING "06L" AT "DELTA" //
+ANTONIO TRAFFIC, CHEVY 1-1 //
+  CROSSING "06L" AT "DELTA" //
+ANDERSON TRAFFIC //
 ```
 
 - You may then continue on taxing down towards the button of **06L**, turning onto taxiway **ALPHA** and preparing to enter the runway.
@@ -78,9 +78,9 @@ CROSSING "06L" AT "DELTA" //
 ```radio
 --145.00--
 
-ANTONIO TRAFFIC //
-CHEVY 1-1 //
-TAKING ACTIVE RUNWAY "06L" FOR TAKEOFF //
+ANTONIO TRAFFIC, CHEVY 1-1 //
+  TAKING ACTIVE RUNWAY "06L" FOR TAKEOFF //
+ANDERSON TRAFFIC //
 ```
 
 - Once you complete your final safety checks, you are cleared to take off.
@@ -90,18 +90,17 @@ TAKING ACTIVE RUNWAY "06L" FOR TAKEOFF //
 ```radio
 --145.00--
 
-ANTONIO TRAFFIC //
-CHEVY 1-1 //
-CLEAR OF YOUR AIRSPACE, SWITCHING TACTICAL, GOOD DAY //
+ANTONIO TRAFFIC, CHEVY 1-1 //
+  CLEAR OF YOUR AIRSPACE, SWITCHING TACTICAL //
+ANDERSON TRAFFIC //
 ```
 
 ```radio
 --351.50--
 
-FISH //
-CHEVY 1-1 //
-CHECKING IN OUT OF ANTONIO //
-PROCEEDING AS FRAGGED //
+FISH, CHEVY 1-1 //
+  CHECKING IN OUT OF ANTONIO //
+  PROCEEDING AS FRAGGED //
 ```
 
 - Once you have checked in with **FISH**, continue onto the next section of the check flight.
@@ -133,11 +132,10 @@ Once you have a accurate count & intention of the floatilla, report into **FISH*
 ```radio
 --351.50--
 
-FISH //
-CHEVY 1-1 //
-AT WAYPOINT 1 //
-EYES ON FLOTILLA //
-3 SHIPS, ALL APPEAR CIVILIAN IN NATURE //
+FISH, CHEVY 1-1 //
+  AT WAYPOINT 1 //
+  EYES ON FLOTILLA //
+  3 SHIPS, ALL APPEAR CIVILIAN IN NATURE //
 ```
 
 **FISH** may or may not respond at this point, if they do - follow instructions - if not, declare your intentions to continue on:
@@ -145,9 +143,8 @@ EYES ON FLOTILLA //
 ```radio
 --351.50--
 
-FISH //
-CHEVY 1-1 //
-CONTINUING ON TO WAYPOINT 2 //
+FISH, CHEVY 1-1 //
+  CONTINUING ON TO WAYPOINT 2 //
 ```
 
 ### Waypoint 2
@@ -157,11 +154,10 @@ CONTINUING ON TO WAYPOINT 2 //
 ```radio
 --351.50--
 
-FISH //
-CHEVY 1-1 //
-AT WAYPOINT 2 //
-EYES ON TARGET //
-NO THREATS IDENTIFIED //
+FISH, CHEVY 1-1 //
+  AT WAYPOINT 2 //
+  EYES ON TARGET //
+  NO THREATS IDENTIFIED //
 ```
 
 Once again, **FISH** may or may not respond at this point, if they do - follow instructions - if not, declare your intentions to continue on:
@@ -169,9 +165,8 @@ Once again, **FISH** may or may not respond at this point, if they do - follow i
 ```radio
 --351.50--
 
-FISH //
-CHEVY 1-1 //
-CONTINUING ON TO WAYPOINT 3 //
+FISH, CHEVY 1-1 //
+  CONTINUING ON TO WAYPOINT 3 //
 ```
 
 ### Waypoint 3
@@ -183,11 +178,10 @@ Once again, your job is to identify the **quantity** and **intention** of the bo
 ```radio
 --351.50--
 
-FISH //
-CHEVY 1-1 //
-AT WAYPOINT 3 //
-EYES ON FLOTILLA //
-3 SHIPS, 2 CIVILIAN, 1 DESTROYER //
+FISH, CHEVY 1-1 //
+  AT WAYPOINT 3 //
+  EYES ON FLOTILLA //
+  3 SHIPS, 2 CIVILIAN, 1 DESTROYER //
 ```
 
 And again, **FISH** may or may not respond at this point, if they do - follow instructions - if not, declare your intentions to continue on:
@@ -195,9 +189,8 @@ And again, **FISH** may or may not respond at this point, if they do - follow in
 ```radio
 --351.50--
 
-FISH //
-CHEVY 1-1 //
-CONTINUING ON TO WAYPOINT 4 //
+FISH, CHEVY 1-1 //
+  CONTINUING ON TO WAYPOINT 4 //
 ```
 
 ### Waypoint 4
@@ -207,11 +200,10 @@ CONTINUING ON TO WAYPOINT 4 //
 ```radio
 --351.50--
 
-FISH //
-CHEVY 1-1 //
-AT WAYPOINT 4 //
-EYES ON TARGET //
-NO THREATS IDENTIFIED //
+FISH, CHEVY 1-1 //
+  AT WAYPOINT 4 //
+  EYES ON TARGET //
+  NO THREATS IDENTIFIED //
 ```
 
 Once you are finished at **Waypoint 4**, you should be lined up well to enter the landing pattern at **Anderson AFB**. Don't forget to report in to **FISH** that you have completed your tasking and will be checking out of **STRIKE**:
@@ -219,9 +211,9 @@ Once you are finished at **Waypoint 4**, you should be lined up well to enter th
 ```radio
 --351.50--
 
-FISH //
-CHEVY 1-1 //
-TASKING COMPLETE, CHECKING OUT OF STRIKE //
+FISH, CHEVY 1-1 //
+  TASKING COMPLETE,
+  CHECKING OUT OF STRIKE //
 ```
 
 In the next sequence we will report into **Anderson AFB** and declare our intentions.
@@ -233,10 +225,10 @@ Welcome to Anderson AFB - first and foremost, lets check in with Anderson Traffi
 ```RADIO
 --145.00--
 
+ANDERSON TRAFFIC, CHEVY 1-1 //
+  CURRENTLY "10 NM" TO YOUR "WEST" //
+  ENTERING LEFT OVERHEAD PATTERN FOR "06L" //
 ANDERSON TRAFFIC //
-CHEVY 1-1 //
-CURRENTLY "10 NM" TO YOUR "WEST" //
-ENTERING LEFT OVERHEAD PATTERN FOR "06L" //
 ```
 
 For purpooses of the check flight, we will be using runway **06L** as the active runway. As such, in keeping with our [Airfield Operations](/docs/procedures/airfield-operations), you will be conducting a **left hand** overhead pattern.
@@ -258,10 +250,10 @@ To be successful in your check flight, you must demonstrate the ability to condu
 ```radio
 --145.00---
 
+ANDERSON TRAFFIC, CHEVY 1-1 //
+  UPWIND "06L" //
+  COMMENCING LANDING, TOUCH AND GO, "06L" //
 ANDERSON TRAFFIC //
-CHEVY 1-1 //
-UPWIND "06L" //
-COMMENCING LANDING, TOUCH AND GO, "06L" //
 ```
 
 Remembering our [Airfield Operations](/docs/procedures/airfield-operations), the main position where you change altitude in the pattern is the downwind - as such lets declare our intentions:
@@ -269,9 +261,9 @@ Remembering our [Airfield Operations](/docs/procedures/airfield-operations), the
 ```radio
 --145.00---
 
+ANDERSON TRAFFIC, CHEVY 1-1 //
+  DOWNWIND "06L" TOUCH AND GO //
 ANDERSON TRAFFIC //
-CHEVY 1-1 //
-DOWNWIND "06L" TOUCH AND GO //
 ```
 
 And throughout the landing pattern, make your calls:
@@ -279,25 +271,25 @@ And throughout the landing pattern, make your calls:
 ```radio
 --145.00---
 
+ANDERSON TRAFFIC, CHEVY 1-1 //
+  TURNING BASE FOR "06L" TOUCH AND GO //
 ANDERSON TRAFFIC //
-CHEVY 1-1 //
-TURNING BASE FOR "06L" TOUCH AND GO //
 ```
 
 ```radio
 --145.00---
 
+ANDERSON TRAFFIC, CHEVY 1-1 //
+  ON FINAL "06L" TOUCH AND GO //
 ANDERSON TRAFFIC //
-CHEVY 1-1 //
-ON FINAL "06L" TOUCH AND GO //
 ```
 
 ```radio
 --145.00---
 
+ANDERSON TRAFFIC, CHEVY 1-1 //
+  CLEAR "06L", RE-ENTERING LEFT PATTERN FOR "06L" TOUCH AND GO //
 ANDERSON TRAFFIC //
-CHEVY 1-1 //
-CLEAR "06L", RE-ENTERING LEFT PATTERN FOR "06L" TOUCH AND GO //
 ```
 
 Repeat that procedure **one** (1) more time, and once you have finished your second touch and go - reenter the pattern and continue onto the full stop landing.
@@ -309,10 +301,10 @@ Not unlike the touch and go landings, you need to perform the full stop landing 
 ```radio
 --145.00---
 
+ANDERSON TRAFFIC, CHEVY 1-1 //
+  UPWIND "06L" //
+  COMMENCING LANDING, FULL STOP, "06L" //
 ANDERSON TRAFFIC //
-CHEVY 1-1 //
-UPWIND "06L" //
-COMMENCING LANDING, FULL STOP, "06L" //
 ```
 
 Remembering our [Airfield Operations](/docs/procedures/airfield-operations), the main position where you change altitude in the pattern is the downwind - as such lets declare our intentions:
@@ -320,9 +312,9 @@ Remembering our [Airfield Operations](/docs/procedures/airfield-operations), the
 ```radio
 --145.00---
 
+ANDERSON TRAFFIC, CHEVY 1-1 //
+  DOWNWIND "06L" FULL STOP LANDING //
 ANDERSON TRAFFIC //
-CHEVY 1-1 //
-DOWNWIND "06L" FULL STOP LANDING //
 ```
 
 And throughout the landing pattern, make your calls:
@@ -330,25 +322,25 @@ And throughout the landing pattern, make your calls:
 ```radio
 --145.00---
 
+ANDERSON TRAFFIC, CHEVY 1-1 //
+  TURNING BASE FOR "06L" FULL STOP LANDING //
 ANDERSON TRAFFIC //
-CHEVY 1-1 //
-TURNING BASE FOR "06L" FULL STOP LANDING //
 ```
 
 ```radio
 --145.00---
 
+ANDERSON TRAFFIC, CHEVY 1-1 //
+  ON FINAL "06L" FULL STOP LANDING//
 ANDERSON TRAFFIC //
-CHEVY 1-1 //
-ON FINAL "06L" FULL STOP LANDING//
 ```
 
 ```radio
 --145.00---
 
+ANDERSON TRAFFIC, CHEVY 1-1 //
+  CLEAR "06L" AT "HOTEL" TAXING TO PARKING //
 ANDERSON TRAFFIC //
-CHEVY 1-1 //
-CLEAR "06L" AT "HOTEL" TAXING TO PARKING //
 ```
 
 Once you have safely cleared the runway and taxi'd to the designated parking area, go ahead and shut down your jet. The debrief will likely happen while you are shutting down.
