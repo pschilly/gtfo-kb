@@ -49,10 +49,10 @@ export const navigation = [
         title: 'Airfield Operations',
         href: '/docs/procedures/airfield-operations',
       },
-      {
-        title: 'Carrier Operations',
-        href: '/docs/procedures/carrier-operations',
-      },
+      // {
+      //   title: 'Carrier Operations',
+      //   href: '/docs/procedures/carrier-operations',
+      // },
     ],
   },
   {
