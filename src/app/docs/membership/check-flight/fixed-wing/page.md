@@ -49,7 +49,7 @@ Departure for your check flight will take place on runway **06L** - due to the n
 
 ANTONIO TRAFFIC, CHEVY 1-1 //
   TAXING TO RUNWAY "06L" VIA "DELTA" "KILO" FOR DEPARTURE //
-ANDERSON TRAFFIC //
+ANTONIO TRAFFIC //
 ```
 
 - You may now begin taxing towards **06L** - knowing that you will likely have to cross **06R**, it is expected that you stop at the hold short line, and once again call out to Antonio Traffic that you are crossing a potentially active runway:
@@ -59,7 +59,7 @@ ANDERSON TRAFFIC //
 
 ANTONIO TRAFFIC, CHEVY 1-1 //
   CROSSING "06R" AT "DELTA" //
-ANDERSON TRAFFIC //
+ANTONIO TRAFFIC //
 ```
 
 - Due to the fact that Antonio has two parallel runways, you must once again hold short, this time of **06L** and declare that you are crossing:
@@ -69,7 +69,7 @@ ANDERSON TRAFFIC //
 
 ANTONIO TRAFFIC, CHEVY 1-1 //
   CROSSING "06L" AT "DELTA" //
-ANDERSON TRAFFIC //
+ANTONIO TRAFFIC //
 ```
 
 - You may then continue on taxing down towards the button of **06L**, turning onto taxiway **ALPHA** and preparing to enter the runway.
@@ -80,7 +80,7 @@ ANDERSON TRAFFIC //
 
 ANTONIO TRAFFIC, CHEVY 1-1 //
   TAKING ACTIVE RUNWAY "06L" FOR TAKEOFF //
-ANDERSON TRAFFIC //
+ANTONIO TRAFFIC //
 ```
 
 - Once you complete your final safety checks, you are cleared to take off.
@@ -92,7 +92,7 @@ ANDERSON TRAFFIC //
 
 ANTONIO TRAFFIC, CHEVY 1-1 //
   CLEAR OF YOUR AIRSPACE, SWITCHING TACTICAL //
-ANDERSON TRAFFIC //
+ANTONIO TRAFFIC //
 ```
 
 ```radio
