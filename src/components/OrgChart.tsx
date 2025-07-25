@@ -6,7 +6,7 @@ export function OrgChart() {
     <div>
       <Image
         src={OrgChartImage}
-        className="h-auto w-auto"
+        className="mx-auto h-auto w-3/4"
         alt="Global Task Force Overlord Organization Chart"
       />
     </div>
