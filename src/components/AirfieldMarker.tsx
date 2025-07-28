@@ -18,14 +18,23 @@ const imageMap = {
   'runway-marker': RunwaysImage,
   'runway-with-taxi': RunwayWithTaxiImage,
   'direction-marker': TaxiDirectionImage,
+} as const // Added 'as const' here
+
+// Define a type for the image names based on imageMap keys
+type ImageKey = keyof typeof imageMap
+
+// Define the props interface for the AirfieldMarker component
+interface AirfieldMarkerProps {
+  image: ImageKey // 'image' must be one of the literal keys from imageMap
+  className?: string // 'className' is an optional string
 }
 
-export function AirfieldMarker({ image, className }) {
-  // Accept className prop
+export function AirfieldMarker({ image, className }: AirfieldMarkerProps) {
   const selectedImage = imageMap[image]
 
   if (!selectedImage) {
-    // Handle cases where the image name is not found
+    // This console.warn acts as a fallback for defensive programming,
+    // though TypeScript should prevent invalid 'image' values at compile time.
     console.warn(`Image "${image}" not found in imageMap.`)
     return null // Or render a placeholder/error message
   }
@@ -34,7 +43,7 @@ export function AirfieldMarker({ image, className }) {
     <div>
       <Image
         src={selectedImage}
-        alt="" // Consider adding a more descriptive alt text if possible
+        alt="" // Consider adding a more descriptive alt text for accessibility
         className={clsx('mx-auto shadow-2xl', className)} // Merge class names
       />
     </div>
