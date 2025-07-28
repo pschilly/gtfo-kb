@@ -26,7 +26,6 @@ It is suggested that you conduct this check flight in the airframe for which you
 
 - Select a **dynamic** slot at **Anderson AFB**.
 - Your helicopter should be preprogrammed with the radio frequencies needed to successfully complete the check flight, if not, get them ready.
-- All airfields you will be visiting during the check flight are **uncontrolled** unless otherwise specified by your instructor.
 
 {% callout title="Frequency Reminder" %}
 The frequencies we will be using during the Check Flight are
@@ -47,7 +46,7 @@ Given the nature of rotary wing aircraft, there are some unique items that must 
 
 To begin, select the aircraft of your choice and dynamic spawn at Anderson AFB. You will be performing a cold start.
 
-Departure for your check flight will take place on runway **06L** - This is the first time of the check flight where **clear** and **concise** radio communications come in play. Take a look here and familiarize yourself with the layout of Anderson AFB:
+Departure for your check flight will take place on runway **06L** - ThIS the first time of the check flight where **clear** and **concise** radio communications come in play. Take a look here and familiarize yourself with the layout of Anderson AFB:
 
 {% andersonchart /%}
 
@@ -131,7 +130,7 @@ Once you have Antonio Airport in sight you will call on Antonio CTAF frequency 1
 --145.00--
 
 ANTONIO TRAFFIC //
-  HEAVY 1-1 IS IS 15 MILES INBOUND FROM THE NORTHEAST
+  HEAVY 1-1 IS 15 MILES INBOUND FROM THE NORTHEAST
   IN BOUND TO LAND //
 ANTONIO TRAFFIC //
 ```
@@ -155,7 +154,7 @@ At this point you will execute your landing using the appropriate pattern entry 
 --145.00--
 
 ANTONIO TRAFFIC //
-  HEAVY 1-1 IS IS DEPARTING RUNWAY "06L" ON TAXIWAY "D"
+  HEAVY 1-1 IS DEPARTING RUNWAY "06L" ON TAXIWAY "D"
   FOR HELICOPTER PARKING TERMINATION LAST CALL //
 ANTONIO TRAFFIC //
 ```

@@ -3,6 +3,7 @@ import { AntonioChart } from '@/components/AntonioChart'
 import { AndersonChart } from '@/components/AndersonChart'
 import { FixedWingBCFRouteChart } from '@/components/FixedWingBCFRouteChart'
 import { OrgChart } from '@/components/OrgChart'
+import { AirfieldMarker } from '@/components/AirfieldMarker'
 
 import { QuickLink, QuickLinks } from '@/components/QuickLinks'
 
@@ -30,6 +31,22 @@ const tags = {
   },
   fwbcfroute: {
     render: FixedWingBCFRouteChart,
+  },
+  airfieldmarker: {
+    render: AirfieldMarker,
+    attributes: {
+      image: {
+        type: String,
+        required: true,
+        description: 'The name of the image to display (e.g., "image-a").',
+      },
+      className: {
+        // New attribute for class names
+        type: String,
+        description:
+          'Additional CSS classes to apply to the image, e.g., "w-1/2".',
+      },
+    },
   },
   figure: {
     selfClosing: true,
