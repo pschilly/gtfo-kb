@@ -16,9 +16,9 @@ The current Council, as of **05 Apr 2025** is as follows:
 
 | **Senior Directors** | **Directors** |
 | :------------------- | ------------- |
-| Caramel              | RyRy          |
-| Flash                | MrDaisy       |
-| Maraud               |               |
+| Caramel              | Frenky        |
+| Flash                | RyRy          |
+| Maraud               | MrDaisy       |
 | Schilly              |               |
 
 ## Squadrons

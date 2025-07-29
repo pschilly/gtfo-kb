@@ -10,8 +10,10 @@ The Task Force Knowledge Base contains information pertaining various subjects i
 
 {% quick-link title="Required Modifications" icon="charter" href="/docs/resources/modifications" description="Global Task Force Overlord has a few requried modifications." /%}
 
-{% quick-link title="How to Join" icon="charter" href="/docs/membership/how-to-join" description="Looking to join the Task Force? Look no further!" /%}
+{% quick-link title="How to Join" icon="lightbulb" href="/docs/membership/how-to-join" description="Looking to join the Task Force? Look no further!" /%}
 
 {% quick-link title="Check Flight" icon="charter" href="/docs/membership/check-flight" description="A simple check ride to ensure you have some basic understandings of airmanship & communications." /%}
+
+{% quick-link title="Membership Portal" icon="warning" href="https://globaltaskforceoverlord.org/member" description="Task Force Membership Portal" /%}
 
 {% /quick-links %}
