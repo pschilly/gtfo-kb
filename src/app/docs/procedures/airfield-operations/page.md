@@ -6,6 +6,8 @@ nextjs:
     description: Standard Airfield Operation procedures that all must abide to ensure safe flight operations while over land.
 ---
 
+> # WIP - SUBJECT TO CHANGE
+
 Airfield Operations are crucial for the safe and efficient movement of all aircraft, including military aircraft, both on the ground and in the air within the airport's controlled airspace. For military aircraft, these operations are particularly vital due to their unique performance characteristics, mission requirements, and often specialized equipment.
 
 ## Pattern Parameters

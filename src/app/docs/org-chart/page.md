@@ -35,6 +35,8 @@ Each one of the squadrons listed in the organization chart acts as a home for sp
 
 Once primarily a Cold War interceptor squadron, the 479th is now a truly multi-role squadron. The Battering Rams are the home to several iconic airframes and conduct various missions including: fighter interceptor, CAP, and strike. Whether the targets are on the land, sea or in the air they are never out of reach of the Battering Rams.
 
+**Leadership Team:** Zerphon & Cardshark
+
 **Primary Airframe:** F4-E Phantom II
 
 **Airframes**
@@ -51,6 +53,8 @@ Once primarily a Cold War interceptor squadron, the 479th is now a truly multi-r
 
 Akula Squadron earned its nickname, the Russian word for "shark", from its Soviet trainers to symbolize its predatory agility and relentless focus on air superiority. Comrpised of several unique airframes, the Akula Squadron excels in its role of being a truly fierce interceptor squadron.
 
+**Leadership Team:** Caramel & Maven
+
 **Primary Airframe:** MiG-29 Fulcrum
 
 **Airframes**
@@ -64,6 +68,8 @@ Akula Squadron earned its nickname, the Russian word for "shark", from its Sovie
 > Wolverines
 
 The Wolverines serve as the home to the Task Force's naval capable airframes, however, when not practical to operate from a floating island - The Wolverines are just as deadly during field operations.
+
+**Leadership Team:** Big Mac & Icicle
 
 **Primary Airframe:** F/A-18C Hornet
 
@@ -79,6 +85,8 @@ The Wolverines serve as the home to the Task Force's naval capable airframes, ho
 
 The Knights is a combination squadron made up of two extremely versitile multi-role airframes. Whether its providing enhanced situational awareness capabilities or effectively supressing enemy air defences - the Knights are often the pointy end of the Task Force's spear.
 
+**Leadership Team:** Cookie
+
 **Primary Airframe:** F-16c Viper
 
 **Airframes**
@@ -89,6 +97,8 @@ The Knights is a combination squadron made up of two extremely versitile multi-r
 ### 19th Air Assault Brigade
 
 Serving as the Task Force's premiere logistics and ground attack squadron, 19th Air Assault Brigade operates all rotary wing, heavy lift as well as a selection of dedicated ground pounders.
+
+**Leadership Team:** Dragon47 & Buttons
 
 **Primary Airframe:** Rotary Wing
 
