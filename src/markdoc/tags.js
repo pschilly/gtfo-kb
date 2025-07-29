@@ -4,6 +4,7 @@ import { AndersonChart } from '@/components/AndersonChart'
 import { FixedWingBCFRouteChart } from '@/components/FixedWingBCFRouteChart'
 import { OrgChart } from '@/components/OrgChart'
 import { AirfieldMarker } from '@/components/AirfieldMarker'
+import { AirfieldTrafficPattern } from '@/components/AirfieldTrafficPattern'
 
 import { QuickLink, QuickLinks } from '@/components/QuickLinks'
 
@@ -22,6 +23,9 @@ const tags = {
   },
   orgchart: {
     render: OrgChart,
+  },
+  airfieldpattern: {
+    render: AirfieldTrafficPattern,
   },
   antoniochart: {
     render: AntonioChart,

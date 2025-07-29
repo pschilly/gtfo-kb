@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 @import './prism.css';
+@import url('https://use.typekit.net/lvt5ixy.css');
 
 @plugin '@tailwindcss/typography';
 
@@ -49,4 +50,86 @@
 
 .bg-topo {
   background-image: url('../images/Topo-BG.jpg');
+}
+
+.cls-1 {
+  stroke-dasharray: 7.5 2.5;
+  @apply fill-stone-900;
+}
+
+.cls-1,
+.cls-2,
+.cls-3,
+.cls-4,
+.cls-5 {
+  stroke: #deb553;
+}
+
+.cls-1,
+.cls-2,
+.cls-5 {
+  @apply stroke-stone-200;
+}
+
+.cls-1,
+.cls-5 {
+  fill: none;
+  stroke-width: 2.5px;
+}
+
+.cls-6 {
+  stroke: #fff;
+}
+
+.cls-6,
+.cls-7 {
+  stroke-miterlimit: 10;
+}
+
+.cls-4 {
+  fill: #deb553;
+}
+.cls-6 {
+  fill: #fff;
+}
+
+.cls-8 {
+  @apply fill-amber-400;
+  font-family: 'Oswald';
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.cls-7 {
+  fill: #616162;
+  stroke: #000;
+}
+
+.cls-9 {
+  letter-spacing: 0em;
+}
+
+.cls-10 {
+  letter-spacing: -0.01em;
+}
+
+.cls-2 {
+  stroke-width: 1px;
+}
+
+.cls-3,
+.cls-4 {
+  fill-rule: evenodd;
+}
+
+.cls-11 {
+  font-family: 'Bebas Neue';
+  font-size: 36px;
+  @apply fill-stone-100;
+}
+
+.cls-4 {
+  stroke-width: 1.88px;
 }

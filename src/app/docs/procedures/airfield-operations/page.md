@@ -93,6 +93,8 @@ These entries carry higher risks due to potential conflicts with aircraft alread
 
 ## The Overhead Pattern
 
+{% airfieldpattern /%}
+
 Every overhead pattern is split into the same 5 phases:
 
 - Upwind
