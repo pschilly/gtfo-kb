@@ -166,7 +166,7 @@ export function AirfieldTrafficPattern() {
             />
             <text className="cls-8" transform="translate(464.69 324.17)">
               <tspan x="0" y="0">
-                Depature
+                Departure
               </tspan>
             </text>
           </g>
