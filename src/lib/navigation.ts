@@ -62,4 +62,14 @@ export const navigation = [
       { title: 'Modifications', href: '/docs/resources/modifications' },
     ],
   },
+  {
+    title: 'Squadrons',
+    links: [
+      { title: '479th FIS', href: '/docs/squadrons/479th' },
+      { title: '62nd TFS', href: '/docs/squadrons/62nd' },
+      { title: '449th TFS', href: '/docs/squadrons/449th' },
+      { title: '507th FS', href: '/docs/squadrons/507th' },
+      { title: '19th AAB', href: '/docs/squadrons/19th' },
+    ],
+  },
 ]
