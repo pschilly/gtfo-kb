@@ -40,28 +40,13 @@ Some of the Task Force training missions may include this mod to create more rea
 
 The latest version of this modification can be found on the DCS forums at: [https://www.476vfightergroup.com/downloads.php?do=download&downloadid=482](https://www.476vfightergroup.com/downloads.php?do=download&downloadid=482)
 
-## Optional Modifications
-
-The following are optional modifications that portions of the Task Force utilize. Things like carrier landing practice, etc..
-
-### IFLOLS Trailer
-
-This modification will be used for Field Carrier Landing Operation Practice on a land based field. Only required for those who are planning on taking part in Carrier Qualification training.
-
-The latest version of this modification can be found on the DCS User Files at: [https://www.digitalcombatsimulator.com/en/files/3330472/](https://www.digitalcombatsimulator.com/en/files/3330472/)
-
-### Navy Equipment
-
-This modification will be used for Field Carrier Landing Operation Practice on a land based field same as the IFLOLS Trailer - both will be needed for FCLOPS. Only required for those who are planning on taking part in Carrier Qualification training.
-
-The latest version of this modification can be found on the DCS User Files at: [https://www.digitalcombatsimulator.com/en/files/3303802/](https://www.digitalcombatsimulator.com/en/files/3303802/)
-
 ---
 
 #### Revisions
 
 | #     | Short Summary        | Date of Approval |
 | :---- | -------------------- | ---------------: |
+| 0.0.4 | Remove optional Mods |        18 Sep 25 |
 | 0.0.3 | KB Migration         |        17 Jul 25 |
 | 0.0.2 | Required mod changes |        04 Jan 25 |
 | 0.0.1 | Document Creation    |        01 Dec 24 |
