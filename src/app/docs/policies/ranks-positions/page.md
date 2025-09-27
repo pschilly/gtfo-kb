@@ -12,7 +12,7 @@ Each member within the Task Force, based on time served, is awarded a "grade" le
 
 ### Grade Levels
 
-| Insignia                      | Time Served | Notes                                    |
+| Grade Level                   | Time Served | Notes                                    |
 | ----------------------------- | ----------- | ---------------------------------------- |
 | {% rank-image grade="G0" /%}  | 0 Months    | Awarded upon application acceptance.     |
 | {% rank-image grade="G1" /%}  | \*          | Awarded upon completion of check flight. |
