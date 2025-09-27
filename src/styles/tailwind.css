@@ -136,3 +136,9 @@
 .cls-4 {
   stroke-width: 1.88px;
 }
+
+tbody td,
+tfoot td {
+  padding: 0;
+  vertical-align: middle;
+}

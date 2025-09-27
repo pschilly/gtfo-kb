@@ -7,6 +7,7 @@ import { AirfieldMarker } from '@/components/AirfieldMarker'
 import { AirfieldTrafficPattern } from '@/components/AirfieldTrafficPattern'
 
 import { QuickLink, QuickLinks } from '@/components/QuickLinks'
+import { RankImage } from '@/components/RankImage'
 
 const tags = {
   callout: {
@@ -78,6 +79,12 @@ const tags = {
       description: { type: String },
       icon: { type: String },
       href: { type: String },
+    },
+  },
+  'rank-image': {
+    render: RankImage,
+    attributes: {
+      grade: { type: String },
     },
   },
 }

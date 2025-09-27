@@ -12,19 +12,19 @@ Each member within the Task Force, based on time served, is awarded a "grade" le
 
 ### Grade Levels
 
-| Grade | Time Served | Notes                                    |
-| :---- | ----------- | ---------------------------------------- |
-| 0     | 0 Months    | Awarded upon application acceptance.     |
-| 1     | \*          | Awarded upon completion of check flight. |
-| 2     | 3 Months    |                                          |
-| 3     | 6 Months    |                                          |
-| 4     | 9 Months    |                                          |
-| 5     | 12 Months   |                                          |
-| 6     | 18 Months   |                                          |
-| 7     | 24 Months   |                                          |
-| 8     | 30 Months   |                                          |
-| 9     | 36 Months   |                                          |
-| 10    | 42 Months   |                                          |
+| Insignia                      | Time Served | Notes                                    |
+| ----------------------------- | ----------- | ---------------------------------------- |
+| {% rank-image grade="G0" /%}  | 0 Months    | Awarded upon application acceptance.     |
+| {% rank-image grade="G1" /%}  | \*          | Awarded upon completion of check flight. |
+| {% rank-image grade="G2" /%}  | 3 Months    |                                          |
+| {% rank-image grade="G3" /%}  | 6 Months    |                                          |
+| {% rank-image grade="G4" /%}  | 9 Months    |                                          |
+| {% rank-image grade="G5" /%}  | 12 Months   |                                          |
+| {% rank-image grade="G6" /%}  | 18 Months   |                                          |
+| {% rank-image grade="G7" /%}  | 24 Months   |                                          |
+| {% rank-image grade="G8" /%}  | 30 Months   |                                          |
+| {% rank-image grade="G9" /%}  | 36 Months   |                                          |
+| {% rank-image grade="G10" /%} | 42 Months   |                                          |
 
 📌 _Time served is based off the day your GTFO membership began._
 
