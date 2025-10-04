@@ -60,8 +60,9 @@ Akula Squadron earned its nickname, the Russian word for "shark", from its Sovie
 **Airframes**
 
 - MiG-29 Fulcrum
-- Mirage 200C
 - Su-27 Flanker-B
+- MiG-21
+- Mirage F1
 
 ### 449th Tactical Fighter Squadron
 
@@ -76,8 +77,21 @@ The Wolverines serve as the home to the Task Force's naval capable airframes, ho
 **Airframes**
 
 - F/A-18C Hornet
-- F-14 Tomcat
 - SU-33 Flanker-D
+
+### Strike Fighter Squadron 141
+
+> Ghostfighters
+
+Brief TBD
+
+**Leadership Team:** Maraud
+
+**Primary Airframe:** F-14 Tomcat
+
+**Airframes**
+
+- F-14 Tomcat A&B
 
 ### 507th Fighter Squadron
 
