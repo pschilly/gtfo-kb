@@ -14,6 +14,6 @@ The Task Force Knowledge Base contains information pertaining various subjects i
 
 {% quick-link title="Check Flight" icon="charter" href="/docs/membership/check-flight" description="A simple check ride to ensure you have some basic understandings of airmanship & communications." /%}
 
-{% quick-link title="Membership Portal" icon="warning" href="https://globaltaskforceoverlord.org/member" description="Task Force Membership Portal" /%}
+{% quick-link title="Membership Portal" icon="warning" href="https://members.globaltaskforceoverlord.org" description="Task Force Membership Portal" /%}
 
 {% /quick-links %}
