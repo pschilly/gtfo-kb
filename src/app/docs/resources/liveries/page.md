@@ -6,11 +6,14 @@ nextjs:
     description: All available custom liveries created for Task Force aircraft.
 ---
 
-The Task Force is slowly compiling a repository of liveries for each of the airframes that we offer. Our liveries are created by memebers of the Task Force and are entirely unique. Some squadrons have chosen "stand in" liveries as their official livery to be used during flights until a custom one can be made. Take a look below for information on what liveries are to be used for each Squadron, and most importantly - where to download our custom ones!
+The Task Force is slowly compiling a repository of liveries for each of the airframes that we offer. Our liveries are created by members of the Task Force and are entirely unique. Some squadrons have chosen "stand in" liveries as their official livery to be used during flights until a custom one can be made. Take a look below for information on what liveries are to be used for each Squadron, and most importantly - where to download our custom ones!
 
 ## Custom Livery Pack
 
-The Task Force custom liveries can be downloaded from the Github repository, here: [https://github.com/pschilly/gtfo-liveries/releases/latest](https://github.com/pschilly/gtfo-liveries/releases/latest)
+The Task Force custom liveries can be downloaded from the Github repository, here:
+[https://github.com/pschilly/gtfo-liveries/releases/latest](https://github.com/pschilly/gtfo-liveries/releases/latest)
+
+To install the liveries, copy the contents of the `Liveries/` folder from that repository into your DCS Saved Games folder at `C:\Users\<your username>\Saved Games\DCS\Liveries`. Replace any existing files to ensure the latest updates are installed. Check that the liveries are installed after restarting DCS.
 
 The following squadrons have custom liveries included in the pack:
 
