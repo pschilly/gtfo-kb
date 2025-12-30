@@ -10,15 +10,15 @@ nextjs:
 
 ## Council
 
-The Council, as described in the [/docs/policies/ranks-positions#council-member](Ranks & Positions) section, is a board of directors responsible for leading the Task Force as a whole. They provide direction & implement policies and procedures.
+The Council, as described in the [Ranks & Positions](policies/ranks-positions#council-member) section, is a board of directors responsible for leading the Task Force as a whole. They provide direction & implement policies and procedures.
 
-The current Council, as of **05 Apr 2025** is as follows:
+The current Council, as of **18 Dec 2025** is as follows:
 
 | **Senior Directors** | **Directors** |
 | :------------------- | ------------- |
-| Caramel              | Frenky        |
-| Flash                | RyRy          |
-| Maraud               | MrDaisy       |
+| Caramel              | Cookie        |
+| Flash                | Dragon 47     |
+| Maraud               | Sparkplug     |
 | Schilly              |               |
 
 ## Squadrons
@@ -35,7 +35,7 @@ Each one of the squadrons listed in the organization chart acts as a home for sp
 
 Once primarily a Cold War interceptor squadron, the 479th is now a truly multi-role squadron. The Battering Rams are the home to several iconic airframes and conduct various missions including: fighter interceptor, CAP, and strike. Whether the targets are on the land, sea or in the air they are never out of reach of the Battering Rams.
 
-**Leadership Team:** Zerphon & Cardshark
+**Leadership Team:** Cardshark & bigsteppa
 
 **Primary Airframe:** F4-E Phantom II
 
@@ -53,7 +53,7 @@ Once primarily a Cold War interceptor squadron, the 479th is now a truly multi-r
 
 Akula Squadron earned its nickname, the Russian word for "shark", from its Soviet trainers to symbolize its predatory agility and relentless focus on air superiority. Comrpised of several unique airframes, the Akula Squadron excels in its role of being a truly fierce interceptor squadron.
 
-**Leadership Team:** Caramel & Maven
+**Leadership Team:** TBD
 
 **Primary Airframe:** MiG-29 Fulcrum
 
@@ -101,11 +101,11 @@ The Knights is a combination squadron made up of two extremely versitile multi-r
 
 **Leadership Team:** Cookie
 
-**Primary Airframe:** F-16c Viper
+**Primary Airframe:** F-16C Viper
 
 **Airframes**
 
-- F-16c Viper
+- F-16C Viper
 - JF-17 Thunder
 
 ### 19th Air Assault Brigade
@@ -137,5 +137,6 @@ Serving as the Task Force's premiere logistics and ground attack squadron, 19th 
 
 | #     | Short Summary     | Date of Approval |
 | :---- | ----------------- | ---------------: |
+| 0.0.3 | Leadership Update |        31 Dec 25 |
 | 0.0.2 | KB Update         |        25 Jul 25 |
 | 0.0.1 | Document Creation |        01 Dec 24 |
