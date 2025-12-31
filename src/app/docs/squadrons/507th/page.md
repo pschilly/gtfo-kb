@@ -6,6 +6,12 @@ nextjs:
     description: Information pertaining to the 507th Fighter Squadron.
 ---
 
+# The Knights
+
+***"We Lead with SEAD"***
+
+{% squadron_patch image="507th_thumb" className="w-auto h-1/8" /%}
+
 **Airframes:** F-16C, JF-17
 
 **Primary Mission Skillset:** SEAD/DEAD
@@ -34,18 +40,21 @@ Other software/tools used by 507th:
 DTC for DCS is required tool for F-16s in 507th. We use DTC for DCS as a way to program waypoints,
 MFDs, radios, etc. in the jet. A DTC file (.json) is provided for every campaign mission. Load this
 into your jet using the software from:
-https://github.com/the-paid-actor/dcs-dtc/releases
+
+[DTC for DCS Releases on GitHub](https://github.com/the-paid-actor/dcs-dtc/releases)
 
 Also see Schilly's guide on using DTC for DCS:
-https://www.youtube.com/watch?v=qqh2HMavGUc
+
+[How-To: DTC | A New Aviator's Guide for DCS](https://youtu.be/qqh2HMavGUc?si=52SPZFxXl-d1Cy2i)
 
 ## Learning Resources
 
 ### Chuck's Guides
 
-Chuck's Guide is the most helpful resource for the F-16 in DCS:
+Chuck's Guide is the most helpful resource for the F-16 in DCS. It is highly referenced in the 507th
+training documentation.
 
-https://www.digitalcombatsimulator.com/en/downloads/documentation/dcs-viper_early_access_manual_en/index.php
+[DCS GUIDE - F-16CM VIPER BLOCK 50](https://chucksguides.com/aircraft/dcs/f-16cm/)
 
 ### F-16 Landing
 
