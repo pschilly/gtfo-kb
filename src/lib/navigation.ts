@@ -10,6 +10,17 @@ export const navigation = [
     ],
   },
   {
+    title: 'Squadrons',
+    links: [
+      { title: '19th AAB', href: '/docs/squadrons/19th' },
+      { title: '62nd TFS', href: '/docs/squadrons/62nd' },
+      { title: '449th TFS', href: '/docs/squadrons/449th' },
+      { title: '479th FIS', href: '/docs/squadrons/479th' },
+      { title: '507th FS', href: '/docs/squadrons/507th' },
+      { title: 'VF-141', href: '/docs/squadrons/VF-141' },
+    ],
+  },
+  {
     title: 'Membership',
     links: [
       {
@@ -60,16 +71,6 @@ export const navigation = [
     links: [
       { title: 'Liveries', href: '/docs/resources/liveries' },
       { title: 'Modifications', href: '/docs/resources/modifications' },
-    ],
-  },
-  {
-    title: 'Squadrons',
-    links: [
-      { title: '479th FIS', href: '/docs/squadrons/479th' },
-      { title: '62nd TFS', href: '/docs/squadrons/62nd' },
-      { title: '449th TFS', href: '/docs/squadrons/449th' },
-      { title: '507th FS', href: '/docs/squadrons/507th' },
-      { title: '19th AAB', href: '/docs/squadrons/19th' },
     ],
   },
 ]

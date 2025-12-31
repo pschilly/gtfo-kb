@@ -6,13 +6,22 @@ nextjs:
     description: Information pertaining to the 507th Fighter Squadron.
 ---
 
-# The Knights
-
-***"We Lead with SEAD"***
+> The Knights
 
 {% squadron_patch image="507th_thumb" className="w-auto h-1/8" /%}
 
-**Airframes:** F-16C, JF-17
+***"We Lead with SEAD"***
+
+The Knights is a combination squadron made up of two extremely versatile multi-role airframes. Whether its providing enhanced situational awareness capabilities or effectively suppressing enemy air defenses - the Knights are often the pointy end of the Task Force's spear.
+
+**Leadership Team:** Cookie
+
+**Primary Airframe:** F-16C Viper
+
+**Airframes**
+
+- F-16C Viper
+- JF-17 Thunder
 
 **Primary Mission Skillset:** SEAD/DEAD
 
@@ -81,7 +90,10 @@ Tutorials from Mike Solyom are heavily used in 507th training materials.
 
 #### Revisions
 
-| #     | Short Summary     | Date of Approval |
-| :---- | ----------------- | ---------------: |
-| 0.0.2 | First Draft       |        28 Dec 25 |
-| 0.0.1 | Document Creation |        15 Sep 25 |
+**TODO:** Update for all modified pages
+
+| #     | Short Summary        | Date of Approval |
+| :---- | -------------------- | ---------------: |
+| 0.0.3 | Update from org page |        31 Dec 25 |
+| 0.0.2 | First Draft          |        28 Dec 25 |
+| 0.0.1 | Document Creation    |        15 Sep 25 |

@@ -2,12 +2,20 @@ import Image from 'next/image'
 import clsx from 'clsx'
 
 // Import all your images here and create a map
+import Thumb_19th  from '@/images/squadron-patches/19thAAB-thumb.png'
+import Thumb_62nd  from '@/images/squadron-patches/62nd-thumb.png'
+import Thumb_449th from '@/images/squadron-patches/449th-TFS-thumb.png'
+import Thumb_479th from '@/images/squadron-patches/479th_Patch-thumb.png'
 import Thumb_507th from '@/images/squadron-patches/507th-thumb.png'
-//import x from '@/images/.png'
+import Thumb_vf141 from '@/images/squadron-patches/VFA-141-thumb.png'
 
 const imageMap = {
+  '19th_thumb':  Thumb_19th,
+  '62nd_thumb':  Thumb_62nd,
+  '449th_thumb': Thumb_449th,
+  '479th_thumb': Thumb_479th,
   '507th_thumb': Thumb_507th,
-  //'': ,
+  'vf141_thumb': Thumb_vf141,
 } as const // Added 'as const' here
 
 // Define a type for the image names based on imageMap keys
