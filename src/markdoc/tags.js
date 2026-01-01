@@ -5,6 +5,7 @@ import { FixedWingBCFRouteChart } from '@/components/FixedWingBCFRouteChart'
 import { OrgChart } from '@/components/OrgChart'
 import { AirfieldMarker } from '@/components/AirfieldMarker'
 import { AirfieldTrafficPattern } from '@/components/AirfieldTrafficPattern'
+import { SquadronPatch } from '@/components/SquadronPatch'
 
 import { QuickLink, QuickLinks } from '@/components/QuickLinks'
 import { RankImage } from '@/components/RankImage'
@@ -39,6 +40,22 @@ const tags = {
   },
   airfieldmarker: {
     render: AirfieldMarker,
+    attributes: {
+      image: {
+        type: String,
+        required: true,
+        description: 'The name of the image to display (e.g., "image-a").',
+      },
+      className: {
+        // New attribute for class names
+        type: String,
+        description:
+          'Additional CSS classes to apply to the image, e.g., "w-1/2".',
+      },
+    },
+  },
+  squadron_patch: {
+    render: SquadronPatch,
     attributes: {
       image: {
         type: String,

@@ -6,7 +6,22 @@ nextjs:
     description: Information pertaining to the 507th Fighter Squadron.
 ---
 
-**Airframes:** F-16C, JF-17
+> The Knights
+
+{% squadron_patch image="507th_thumb" className="w-auto h-1/8" /%}
+
+***"We Lead with SEAD"***
+
+The Knights is a combination squadron made up of two extremely versatile multi-role airframes. Whether its providing enhanced situational awareness capabilities or effectively suppressing enemy air defenses - the Knights are often the pointy end of the Task Force's spear.
+
+**Leadership Team:** Cookie
+
+**Primary Airframe:** F-16C Viper
+
+**Airframes**
+
+- F-16C Viper
+- JF-17 Thunder
 
 **Primary Mission Skillset:** SEAD/DEAD
 
@@ -34,18 +49,21 @@ Other software/tools used by 507th:
 DTC for DCS is required tool for F-16s in 507th. We use DTC for DCS as a way to program waypoints,
 MFDs, radios, etc. in the jet. A DTC file (.json) is provided for every campaign mission. Load this
 into your jet using the software from:
-https://github.com/the-paid-actor/dcs-dtc/releases
+
+[DTC for DCS Releases on GitHub](https://github.com/the-paid-actor/dcs-dtc/releases)
 
 Also see Schilly's guide on using DTC for DCS:
-https://www.youtube.com/watch?v=qqh2HMavGUc
+
+[How-To: DTC | A New Aviator's Guide for DCS](https://youtu.be/qqh2HMavGUc?si=52SPZFxXl-d1Cy2i)
 
 ## Learning Resources
 
 ### Chuck's Guides
 
-Chuck's Guide is the most helpful resource for the F-16 in DCS:
+Chuck's Guide is the most helpful resource for the F-16 in DCS. It is highly referenced in the 507th
+training documentation.
 
-https://www.digitalcombatsimulator.com/en/downloads/documentation/dcs-viper_early_access_manual_en/index.php
+[DCS GUIDE - F-16CM VIPER BLOCK 50](https://chucksguides.com/aircraft/dcs/f-16cm/)
 
 ### F-16 Landing
 
@@ -72,7 +90,10 @@ Tutorials from Mike Solyom are heavily used in 507th training materials.
 
 #### Revisions
 
-| #     | Short Summary     | Date of Approval |
-| :---- | ----------------- | ---------------: |
-| 0.0.2 | First Draft       |        28 Dec 25 |
-| 0.0.1 | Document Creation |        15 Sep 25 |
+**TODO:** Update for all modified pages
+
+| #     | Short Summary        | Date of Approval |
+| :---- | -------------------- | ---------------: |
+| 0.0.3 | Update from org page |        31 Dec 25 |
+| 0.0.2 | First Draft          |        28 Dec 25 |
+| 0.0.1 | Document Creation    |        15 Sep 25 |
