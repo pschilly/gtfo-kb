@@ -26,10 +26,15 @@ The 19th Helicopter Brigade, known by their battle-hardened nickname "Shake and 
 
 - CH-47F Chinook
 - AH-64D Apache
-- C-130J Super Hercules
+- C-130J Hercules
 - OH-58D Kiowa Warrior
+- Ka-50 Blackshark 3
+- Mi-8MTV2 Magnificent Eight
+- Mi-24P Hind
 - SA-342 Gazelle
-- A-10CII Warthog
+- UH-1H Huey
+- A-4E Skyhawk
+- A-10C Thunderbolt II
 
 ---
 

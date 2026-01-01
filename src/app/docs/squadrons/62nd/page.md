@@ -20,6 +20,7 @@ Akula Squadron earned its nickname, the Russian word for "shark", from its Sovie
 
 - MiG-29 Fulcrum
 - MiG-21 BIS
+- Mirage F1
 
 ---
 

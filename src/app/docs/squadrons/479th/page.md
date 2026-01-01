@@ -20,7 +20,6 @@ Once primarily a Cold War interceptor squadron, the 479th is now a truly multi-r
 
 - F4-E Phantom II
 - AJS-37 Viggen
-- Mirage F1
 
 ---
 
