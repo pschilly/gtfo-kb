@@ -34,7 +34,6 @@ Each one of the squadrons listed in the organization chart acts as a home for sp
 See the individual pages for each of the other squadrons in the side menu and below.
 
 - [19th AAB](squadrons/19th)
-- [62nd TFS](squadrons/62nd)
 - [449th TFS](squadrons/449th)
 - [479th FIS](squadrons/479th)
 - [507th FS](squadrons/507th)
@@ -46,6 +45,7 @@ See the individual pages for each of the other squadrons in the side menu and be
 
 | #     | Short Summary     | Date of Approval |
 | :---- | ----------------- | ---------------: |
+| 0.0.6 | 62nd Dissolution  |        03 Jan 26 |
 | 0.0.5 | Name Fixed        |        03 Jan 26 |
 | 0.0.4 | Squadron Breakout |        31 Dec 25 |
 | 0.0.3 | Leadership Update |        30 Dec 25 |
