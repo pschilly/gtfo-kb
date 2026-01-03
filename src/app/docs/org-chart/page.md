@@ -16,10 +16,10 @@ The current Council, as of **18 Dec 2025** is as follows:
 
 | **Senior Directors** | **Directors** |
 | :------------------- | ------------- |
-| Caramel              | Cookie        |
-| Flash                | Dragon 47     |
-| Maraud               | Sparkplug     |
-| Schilly              |               |
+| Flash                | Cookie        |
+| Maraud               | Dragon 47     |
+| Schilly              | Sparkplug     |
+| Seamus               |               |
 
 ## Squadrons
 
@@ -46,6 +46,7 @@ See the individual pages for each of the other squadrons in the side menu and be
 
 | #     | Short Summary     | Date of Approval |
 | :---- | ----------------- | ---------------: |
+| 0.0.5 | Name Fixed        |        03 Jan 26 |
 | 0.0.4 | Squadron Breakout |        31 Dec 25 |
 | 0.0.3 | Leadership Update |        30 Dec 25 |
 | 0.0.2 | KB Update         |        25 Jul 25 |
