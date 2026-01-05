@@ -18,7 +18,11 @@ The Knights is a combination squadron made up of two extremely versatile multi-r
 
 **Primary Airframe:** F-16C Viper
 
+**Primary Mission Skillset:** SEAD/DEAD
+
 **Airframes**
+
+507th now flies airframes previously assigned to 62nd Squadron. Airframes are mainly flown in BLUEFOR operations.
 
 | Airframe           | 507th Radio Callsign |
 | ------------------ | -------------------- |
@@ -27,8 +31,6 @@ The Knights is a combination squadron made up of two extremely versatile multi-r
 | MiG-29 Fulcrum     | Spear                |
 | MiG-21 BIS Fishbed | Arrow                |
 | Mirage F1          | Mace                 |
-
-**Primary Mission Skillset:** SEAD/DEAD
 
 ## Helpful Links
 

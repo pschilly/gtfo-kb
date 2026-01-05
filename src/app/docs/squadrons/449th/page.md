@@ -18,7 +18,9 @@ The Wolverines serve as the home to the Task Force's naval capable airframes, ho
 
 **Airframes**
 
-- F/A-18C Hornet
+| Airframe           | 449th Radio Callsign |
+| ------------------ | -------------------- |
+| F/A-18C Hornet     | Logan                |
 
 ---
 
@@ -26,5 +28,6 @@ The Wolverines serve as the home to the Task Force's naval capable airframes, ho
 
 | #     | Short Summary        | Date of Approval |
 | :---- | -------------------- | ---------------: |
+| 0.0.3 | Callsign update      |         5 Jan 26 |
 | 0.0.2 | Update from org page |        31 Dec 25 |
 | 0.0.1 | Document Creation    |        15 Sep 25 |

@@ -24,17 +24,19 @@ The 19th Helicopter Brigade, known by their battle-hardened nickname "Shake and 
 
 **Airframes**
 
-- CH-47F Chinook
-- AH-64D Apache
-- C-130J Hercules
-- OH-58D Kiowa Warrior
-- Ka-50 Blackshark 3
-- Mi-8MTV2 Magnificent Eight
-- Mi-24P Hind
-- SA-342 Gazelle
-- UH-1H Huey
-- A-4E Skyhawk
-- A-10C Thunderbolt II
+| Airframe                    | 19th Radio Callsign  | Tasking   |
+| --------------------------- | -------------------- | --------- |
+| CH-47F Chinook              | Shake                | Logistics |
+| Mi-8MTV2 Magnificent Eight  | Shake                | Logistics |
+| UH-1H Huey                  | Shake                | Logistics |
+| AH-64D Apache               | Bake                 | Attack    |
+| Ka-50 Blackshark 3          | Bake                 | Attack    |
+| Mi-24P Hind                 | Bake                 | Attack    |
+| C-130J Hercules             | Wonder               | Logistics |
+| OH-58D Kiowa Warrior        | El Diablo            | Recon     |
+| SA-342 Gazelle              | El Diablo            | Recon     |
+| A-10C Thunderbolt II        | Hawg                 | Attack    |
+| A-4E Skyhawk                |                      | Attack    |
 
 ---
 
