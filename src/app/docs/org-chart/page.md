@@ -24,13 +24,6 @@ The current Council, as of **18 Dec 2025** is as follows:
 ## Squadrons
 
 Each one of the squadrons listed in the organization chart acts as a home for specific airframes.
-
-### 42nd Holding Squadron
-
-42nd Holding Squadron, formally 42nd Receiving Squadron, acts as both the starting point for all members entering the Task Force, as well as a holding zone for those members who have not yet been reassigned after the amalgamation of squadrons that took place on **2 Aug 25**.
-
-### Other Squadrons
-
 See the individual pages for each of the other squadrons in the side menu and below.
 
 - [19th AAB](squadrons/19th)
