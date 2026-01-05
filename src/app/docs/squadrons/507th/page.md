@@ -14,14 +14,19 @@ nextjs:
 
 The Knights is a combination squadron made up of two extremely versatile multi-role airframes. Whether its providing enhanced situational awareness capabilities or effectively suppressing enemy air defenses - the Knights are often the pointy end of the Task Force's spear.
 
-**Leadership Team:** Cookie
+**Leadership Team:** Cookie (F-16 Lead) & Buttons (MiG-29/21 Lead)
 
 **Primary Airframe:** F-16C Viper
 
 **Airframes**
 
-- F-16C Viper
-- JF-17 Thunder
+| Airframe           | 507th Radio Callsign |
+| ------------------ | -------------------- |
+| F-16C Viper        | Dagger               |
+| JF-17 Thunder      | Hammer               |
+| MiG-29 Fulcrum     | Spear                |
+| MiG-21 BIS Fishbed | Arrow                |
+| Mirage F1          | Mace                 |
 
 **Primary Mission Skillset:** SEAD/DEAD
 
@@ -94,6 +99,7 @@ Tutorials from Mike Solyom are heavily used in 507th training materials.
 
 | #     | Short Summary        | Date of Approval |
 | :---- | -------------------- | ---------------: |
+| 0.0.4 | Leadership update    |         5 Jan 26 |
 | 0.0.3 | Update from org page |        31 Dec 25 |
 | 0.0.2 | First Draft          |        28 Dec 25 |
 | 0.0.1 | Document Creation    |        15 Sep 25 |

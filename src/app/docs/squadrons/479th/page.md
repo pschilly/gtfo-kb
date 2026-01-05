@@ -12,7 +12,7 @@ nextjs:
 
 Once primarily a Cold War interceptor squadron, the 479th is now a truly multi-role squadron. The Battering Rams are the home to several iconic airframes and conduct various missions including: fighter interceptor, CAP, and strike. Whether the targets are on the land, sea or in the air they are never out of reach of the Battering Rams.
 
-**Leadership Team:** Cardshark & bigsteppa
+**Leadership Team:** Cardshark & Roach
 
 **Primary Airframe:** F4-E Phantom II
 
@@ -27,5 +27,6 @@ Once primarily a Cold War interceptor squadron, the 479th is now a truly multi-r
 
 | #     | Short Summary        | Date of Approval |
 | :---- | -------------------- | ---------------: |
+| 0.0.3 | Leadership update    |         5 Jan 26 |
 | 0.0.2 | Update from org page |        31 Dec 25 |
 | 0.0.1 | Document Creation    |        15 Sep 25 |
