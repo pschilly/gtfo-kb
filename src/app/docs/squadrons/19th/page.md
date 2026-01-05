@@ -14,7 +14,7 @@ Serving as the Task Force's premiere logistics and ground attack squadron, 19th 
 
 The 19th Helicopter Brigade, known by their battle-hardened nickname "Shake and Bake," has a legacy built on firepower, speed, and unwavering courage. Established in 1967, this elite brigade was formed in response to the growing need for rapid air mobility in modern warfare. Originally equipped with UH-1 Hueys and CH-47 Chinooks, the brigade proved its mettle during the Vietnam War, executing daring insertions, extractions, and resupply missions deep in hostile territory. Over the years, it evolved into a premier fighting force, incorporating the AH-64 Apache gunships to dominate the battlefield. The brigade earned its nickname "Shake and Bake" from its unique combat tactics, in which Chinooks (the "Shake") would transport troops and supplies deep into the battlefield while Apaches (the "Bake") provided devastating fire support, ensuring safe landings and extractions. This synchronized method of rapid deployment and overwhelming force became the signature of the 19th, feared by enemies and revered by allies.
 
-**Leadership Team:** Dragon47 & Buttons
+**Leadership Team:** Dragon47 & Odie
 
 **Primary Airframes:**
 
@@ -24,17 +24,19 @@ The 19th Helicopter Brigade, known by their battle-hardened nickname "Shake and 
 
 **Airframes**
 
-- CH-47F Chinook
-- AH-64D Apache
-- C-130J Hercules
-- OH-58D Kiowa Warrior
-- Ka-50 Blackshark 3
-- Mi-8MTV2 Magnificent Eight
-- Mi-24P Hind
-- SA-342 Gazelle
-- UH-1H Huey
-- A-4E Skyhawk
-- A-10C Thunderbolt II
+| Airframe                    | 19th Radio Callsign  | Tasking   |
+| --------------------------- | -------------------- | --------- |
+| CH-47F Chinook              | Shake                | Logistics |
+| Mi-8MTV2 Magnificent Eight  | Shake                | Logistics |
+| UH-1H Huey                  | Shake                | Logistics |
+| AH-64D Apache               | Bake                 | Attack    |
+| Ka-50 Blackshark 3          | Bake                 | Attack    |
+| Mi-24P Hind                 | Bake                 | Attack    |
+| C-130J Hercules             | Wonder               | Logistics |
+| OH-58D Kiowa Warrior        | El Diablo            | Recon     |
+| SA-342 Gazelle              | El Diablo            | Recon     |
+| A-10C Thunderbolt II        | Hawg                 | Attack    |
+| A-4E Skyhawk                |                      | Attack    |
 
 ---
 
@@ -42,5 +44,6 @@ The 19th Helicopter Brigade, known by their battle-hardened nickname "Shake and 
 
 | #     | Short Summary        | Date of Approval |
 | :---- | -------------------- | ---------------: |
+| 0.0.3 | Leadership update    |         5 Jan 26 |
 | 0.0.2 | Update from org page |        31 Dec 25 |
 | 0.0.1 | Document Creation    |        15 Sep 25 |
