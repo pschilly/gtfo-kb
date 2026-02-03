@@ -6,18 +6,22 @@ nextjs:
     description: Information pertaining to activity requirements of some levels of membership.
 ---
 
-## Exception
+## Community
 
-Specialists, Leadership and Council Members have made a commitment to that role and as such are expected to maintain an increased level of activity that their role demands.
+There is no activity standard for GTFO Community members. Hop in when you can!
+
+## Core
+
+GTFO Core members including Instructors, Leadership, and Council Members have made a commitment to that role and as such are expected to maintain an increased level of activity that their role demands.
 
 However, no one is _locked_ into a specific position and if their real-life commitments change in such a manner that they are no longer able to commit the necessary time and/or effort to the Task Force that their role demands - it is expected that they will gacefully step down and allow someone else to take over.
 
 ## Squadron Leadership
 
-> There is a expectation that squadron leadership **shall** produce at least a single event per month. These events could include: training, 24/7 get together, public server takeover, etc...
->
-> Although the expectation is a single event, it is **highly encouraged** that an even higher number of events are held.
->
+There is a expectation that squadron leadership **shall** produce at least a single event per month. These events could include: training, 24/7 get together, public server takeover, etc...
+
+Although the expectation is a single event, it is **highly encouraged** that an even higher number of events are held.
+
 > **Failure to do so, will result in removal from your leadership role.**
 
 ---
@@ -26,6 +30,7 @@ However, no one is _locked_ into a specific position and if their real-life comm
 
 | #     | Short Summary                      | Date of Approval |
 | :---- | ---------------------------------- | ---------------: |
+| 0.0.4 | Core vs. Community Update          |        02 Feb 26 |
 | 0.0.3 | KB & Check Flight Procedure Update |        14 Jul 25 |
 | 0.0.2 | Squadron Leadership Update         |        08 Jun 25 |
 | 0.0.1 | Document Creation                  |        01 Dec 24 |

@@ -6,6 +6,7 @@ import { OrgChart } from '@/components/OrgChart'
 import { AirfieldMarker } from '@/components/AirfieldMarker'
 import { AirfieldTrafficPattern } from '@/components/AirfieldTrafficPattern'
 import { SquadronPatch } from '@/components/SquadronPatch'
+import { CoreCommunity } from '@/components/CoreCommunity'
 
 import { QuickLink, QuickLinks } from '@/components/QuickLinks'
 import { RankImage } from '@/components/RankImage'
@@ -25,6 +26,9 @@ const tags = {
   },
   orgchart: {
     render: OrgChart,
+  },
+  core_community: {
+    render: CoreCommunity,
   },
   airfieldpattern: {
     render: AirfieldTrafficPattern,
