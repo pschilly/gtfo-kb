@@ -43,6 +43,7 @@ export const navigation = [
   {
     title: 'Policies',
     links: [
+      { title: 'Core vs. Community', href: '/docs/policies/core-community' },
       { title: 'Activity', href: '/docs/policies/activity' },
       { title: 'Multi-Clan', href: '/docs/policies/multi-clan' },
       { title: 'Ranks & Positions', href: '/docs/policies/ranks-positions' },

@@ -21,6 +21,22 @@ The current Council, as of **18 Dec 2025** is as follows:
 | Schilly              | Sparkplug     |
 | Seamus               |               |
 
+## Activity Tiers: Core vs. Community
+
+{% core_community /%}
+
+Global Task Force Overlord functions on two activity tiers: Core and Community.
+
+Contact GTFO members on our Discord for more info about the activity tiers.
+
+### Community
+
+Our community members have access to our Discord 24/7 servers, our knowledge base on our site, and our training and qualification flights for specific airframes. You can also participate in campaign missions, but only if there are available slots, you’re qualified for the airframe, and no core members can fill that role. There is no activity expectation to be a community member. You’re part of the GTFO community.
+
+### Core
+
+For those who want an experience focused on campaigns, the camaraderie of consistent squadron activity and deep dives on a particular airframe, core is for you. Core members have priority on all campaign missions, priority on our training servers, greater XP accruals to rank up, and maybe even some physical rewards down the line. Core does have an activity requirement of at least two events per month. If not met means a move back into the community pool. 
+
 ## Squadrons
 
 Each one of the squadrons listed in the organization chart acts as a home for specific airframes.
