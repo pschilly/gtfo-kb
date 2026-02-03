@@ -30,6 +30,7 @@ Although the expectation is a single event, it is **highly encouraged** that an 
 
 | #     | Short Summary                      | Date of Approval |
 | :---- | ---------------------------------- | ---------------: |
+| 0.0.4 | Core vs. Community Update          |        02 Feb 26 |
 | 0.0.3 | KB & Check Flight Procedure Update |        14 Jul 25 |
 | 0.0.2 | Squadron Leadership Update         |        08 Jun 25 |
 | 0.0.1 | Document Creation                  |        01 Dec 24 |

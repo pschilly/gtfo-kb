@@ -52,11 +52,12 @@ See the individual pages for each of the other squadrons in the side menu and be
 
 #### Revisions
 
-| #     | Short Summary     | Date of Approval |
-| :---- | ----------------- | ---------------: |
-| 0.0.6 | 62nd Dissolution  |        03 Jan 26 |
-| 0.0.5 | Name Fixed        |        03 Jan 26 |
-| 0.0.4 | Squadron Breakout |        31 Dec 25 |
-| 0.0.3 | Leadership Update |        30 Dec 25 |
-| 0.0.2 | KB Update         |        25 Jul 25 |
-| 0.0.1 | Document Creation |        01 Dec 24 |
+| #     | Short Summary              | Date of Approval |
+| :---- | -------------------------- | ---------------: |
+| 0.0.7 | Core vs. Community Update  |        02 Feb 26 |
+| 0.0.6 | 62nd Dissolution           |        03 Jan 26 |
+| 0.0.5 | Name Fixed                 |        03 Jan 26 |
+| 0.0.4 | Squadron Breakout          |        31 Dec 25 |
+| 0.0.3 | Leadership Update          |        30 Dec 25 |
+| 0.0.2 | KB Update                  |        25 Jul 25 |
+| 0.0.1 | Document Creation          |        01 Dec 24 |
