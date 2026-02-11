@@ -50,10 +50,10 @@ export function Hero() {
             />
             <div className="relative">
               <p className="inline bg-linear-to-r from-amber-200 via-amber-400 to-amber-200 bg-clip-text font-display text-5xl tracking-tight text-transparent">
-                Global Task Force Overlord
+                GLOBAL TASK FORCE OVERLORD
               </p>
               <p className="mt-3 text-2xl tracking-tight text-stone-400">
-                Global Task Force Overlord (GTFO) is a Digital Combat Simulator
+                GLOBAL TASK FORCE OVERLORD (GTFO) is a Digital Combat Simulator
                 community made up of like minded individuals who, above all
                 else, value collaboration and having fun.
               </p>

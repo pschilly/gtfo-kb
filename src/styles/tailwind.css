@@ -1,6 +1,7 @@
 @import 'tailwindcss';
 @import './prism.css';
 @import url('https://use.typekit.net/lvt5ixy.css');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
 
 @plugin '@tailwindcss/typography';
 
@@ -35,9 +36,10 @@
   --text-9xl: 8rem;
   --text-9xl--line-height: 1;
 
-  --font-sans: var(--font-inter);
-  --font-display: var(--font-lexend);
+  --font-sans: "Montserrat", sans-serif;
+  --font-display: "Oswald", sans-serif;
   --font-display--font-feature-settings: 'ss01';
+  --default-font-family: var(--font-sans);
 
   --container-8xl: 88rem;
 }
