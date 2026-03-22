@@ -28,12 +28,6 @@ The latest version of this modification can be found on the developers GitHub at
 
 An A-4E-C community made "guide" can be found here: [https://docs.google.com/presentation/d/1cUH7jpAoGHm-IzUDnv_NDhiZlvX55Q9WvpgR1d9ksYY](https://docs.google.com/presentation/d/1cUH7jpAoGHm-IzUDnv_NDhiZlvX55Q9WvpgR1d9ksYY)
 
-### UH-60L Blackhawk
-
-The DCS UH-60L Black Hawk mod is an incredibly detailed, free community aircraft featuring an extensive clickable cockpit and an Enhanced Flight Model (EFM). Recent updates introduced the heavily-armed DAP variant, Force Feedback support, and AI door gunners. It's an awesome, high-quality mod rivaling paid modules for transport and attack missions.
-
-The latest version of this modification can be found on their Pateron page (don't worry, its free) - [https://www.patreon.com/posts/uh60l-mod-2-0-138859868](https://www.patreon.com/posts/uh60l-mod-2-0-138859868). As of 4 Oct 25, this is a direct link to download the mod: [https://www.patreon.com/file?h=138859868&m=535012436](https://www.patreon.com/file?h=138859868&m=535012436)
-
 ### 476 vFG - Air Weapons Range Objects
 
 Some of the Task Force training missions may include this mod to create more realistic and immersive target ranges. These targets provide more feedback which is invaluable from a training perspective.
