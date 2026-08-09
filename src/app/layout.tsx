@@ -45,6 +45,9 @@ export default function RootLayout({
       )}
       suppressHydrationWarning
     >
+      <head>
+        <link rel="stylesheet" href="https://use.typekit.net/lvt5ixy.css" />
+      </head>
       <body className="flex min-h-full [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:bg-stone-300 dark:[&::-webkit-scrollbar-thumb]:bg-stone-800 [&::-webkit-scrollbar-track]:bg-stone-100 dark:[&::-webkit-scrollbar-track]:bg-stone-500/50">
         <Providers>
           <Layout>{children}</Layout>

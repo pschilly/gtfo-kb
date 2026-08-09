@@ -1,6 +1,5 @@
 @import 'tailwindcss';
 @import './prism.css';
-@import url('https://use.typekit.net/lvt5ixy.css');
 
 @plugin '@tailwindcss/typography';
 
