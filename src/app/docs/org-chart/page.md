@@ -18,7 +18,7 @@ The current Council, as of **18 Dec 2025** is as follows:
 | :------------------- | ------------- |
 | Flash                | Cookie        |
 | Maraud               | Dragon 47     |
-| Schilly              | Sparkplug     |
+| Schilly              | * *Vacant*     |
 | Seamus               |               |
 
 ## Activity Tiers: Core vs. Community
@@ -44,7 +44,6 @@ See the individual pages for each of the other squadrons in the side menu and be
 
 - [19th AAB](squadrons/19th)
 - [449th TFS](squadrons/449th)
-- [479th FIS](squadrons/479th)
 - [507th FS](squadrons/507th)
 - [VF-141](squadrons/VF-141)
 
@@ -54,6 +53,7 @@ See the individual pages for each of the other squadrons in the side menu and be
 
 | #     | Short Summary              | Date of Approval |
 | :---- | -------------------------- | ---------------: |
+| 0.0.8 | Org Chart Update           |        09 Aug 26 |
 | 0.0.7 | Core vs. Community Update  |        02 Feb 26 |
 | 0.0.6 | 62nd Dissolution           |        03 Jan 26 |
 | 0.0.5 | Name Fixed                 |        03 Jan 26 |
