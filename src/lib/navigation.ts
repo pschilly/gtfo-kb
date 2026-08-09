@@ -14,7 +14,6 @@ export const navigation = [
     links: [
       { title: '19th AAB', href: '/docs/squadrons/19th' },
       { title: '449th TFS', href: '/docs/squadrons/449th' },
-      { title: '479th FIS', href: '/docs/squadrons/479th' },
       { title: '507th FS', href: '/docs/squadrons/507th' },
       { title: 'VF-141', href: '/docs/squadrons/VF-141' },
     ],
