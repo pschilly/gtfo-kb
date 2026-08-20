@@ -6,7 +6,7 @@ import withSearch from './src/markdoc/search.mjs'
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'md', 'ts', 'tsx'],
   turbopack: {},
-  output: 'export',
+  output: 'standalone',
   images: {
     unoptimized: true,
   },
