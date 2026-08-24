@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 
-import FixedWingBCFRouteChartImage from '@/images/fixed-wing-bcf-route.jpg'
+import FixedWingBCFRouteChartImage from '@/images/fixed-wing-bcf-route.png'
 import Image from 'next/image'
 
 export function FixedWingBCFRouteChart() {
