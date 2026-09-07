@@ -5,10 +5,10 @@ import { Highlight } from 'prism-react-renderer'
 
 export function Fence({
   children,
-  language,
+  language = 'plain',
 }: {
   children: string
-  language: string
+  language?: string
 }) {
   return (
     <Highlight
