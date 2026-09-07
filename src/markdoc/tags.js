@@ -10,6 +10,7 @@ import { CoreCommunity } from '@/components/CoreCommunity'
 
 import { QuickLink, QuickLinks } from '@/components/QuickLinks'
 import { RankImage } from '@/components/RankImage'
+import { AwardsGallery } from '@/components/AwardsGallery'
 
 const tags = {
   callout: {
@@ -107,6 +108,9 @@ const tags = {
     attributes: {
       grade: { type: String },
     },
+  },
+  awards: {
+    render: AwardsGallery,
   },
 }
 
