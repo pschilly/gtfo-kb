@@ -60,6 +60,10 @@ export const navigation = [
         title: 'Airfield Operations',
         href: '/docs/procedures/airfield-operations',
       },
+      {
+        title: 'Reading RSO Grading',
+        href: '/docs/procedures/airfield-operations/rso-grading',
+      },
       // {
       //   title: 'Carrier Operations',
       //   href: '/docs/procedures/carrier-operations',
