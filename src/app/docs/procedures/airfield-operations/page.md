@@ -116,7 +116,7 @@ Let's break it down:
 ### Final
 
 {% callout title="Want to know how you're doing?" %}
-The **RSO (Runway Safety Officer)** bot automatically grades your overhead pattern attempts and posts a debrief card after every landing. Check out [Reading RSO Grading](/docs/procedures/airfield-operations/rso-grading) to learn how to read your scorecard, the ATC shorthand callouts, and the radar scope debrief.
+The **RSO (Runway Safety Officer)** bot automatically grades your overhead pattern attempts and posts a debrief card after every landing, while the **LSO (AIRBOSS)** grades your arrested landings on the carrier. Check out [Reading RSO Grading](/docs/procedures/airfield-operations/rso-grading) to learn how to read your scorecard, the ATC shorthand callouts, and the radar scope debrief — and [Reading LSO Grading](/docs/procedures/airfield-operations/lso-grading) to decode the groove calls, wave-offs, and wires.
 {% /callout %}
 
 ## Airfield Markings
