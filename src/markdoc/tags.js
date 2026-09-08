@@ -11,6 +11,7 @@ import { CoreCommunity } from '@/components/CoreCommunity'
 import { QuickLink, QuickLinks } from '@/components/QuickLinks'
 import { RankImage } from '@/components/RankImage'
 import { AwardsGallery } from '@/components/AwardsGallery'
+import { GradeLookup } from '@/components/GradeLookup'
 
 const tags = {
   callout: {
@@ -111,6 +112,19 @@ const tags = {
   },
   awards: {
     render: AwardsGallery,
+  },
+  grade_lookup: {
+    selfClosing: true,
+    attributes: {
+      mode: {
+        type: String,
+        required: true,
+        matches: ['rso', 'lso'],
+        errorLevel: 'critical',
+      },
+      title: { type: String },
+    },
+    render: GradeLookup,
   },
 }
 
