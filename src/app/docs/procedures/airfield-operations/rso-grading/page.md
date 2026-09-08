@@ -68,7 +68,7 @@ Every approach starts at a base score of **5.0 points**. Deductions are applied 
 
 | Grade            | Symbol | Score     | Card Border       | Meaning & Flight Quality                                                                                          |
 | :--------------- | :----: | :-------- | :---------------- | :---------------------------------------------------------------------------------------------------------------- |
-| **Underlined OK** | _OK_  | 4.5 – 5.0 | Green             | **Perfect / Exemplary Pass.** Ideal pattern spacing and altitude, stabilized 3.0° glidepath, crisp centerline tracking, and an on-target touchdown in the TDZ. |
+| **Underlined OK** | _OK_  | 4.5 – 5.0 | Gold             | **Perfect / Exemplary Pass.** Ideal pattern spacing and altitude, stabilized 3.0° glidepath, crisp centerline tracking, and an on-target touchdown in the TDZ. |
 | **OK**           | `OK`   | 3.5 – 4.4 | Green             | **Above-Average Pass.** Minor deviations with prompt, smooth corrections. Safe and stabilized throughout.          |
 | **Fair**         | `(OK)` | 2.5 – 3.4 | Teal              | **Average Pass.** Moderate deviations (slightly wide downwind, slight glidepath error, minor lineup offset) safely managed to touchdown. |
 | **No Grade**     | `--`   | 1.5 – 2.4 | Yellow            | **Below Average Pass.** Significant deviations from standard parameters (excessive wander, flat approach, or landing long), but landed safely. |
