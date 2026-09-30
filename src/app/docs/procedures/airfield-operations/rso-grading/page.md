@@ -8,31 +8,29 @@ nextjs:
 
 {% grade_lookup mode="rso" /%}
 
-{% callout title="Subject to Change" type="warning" %}
-The RSO is still learning! As more pattern data is collected and the grading parameters are tweaked, the tolerances, deductions, and thresholds in this document are subject to change. If your pass card starts showing something that doesn't match this guide, this page will be updated to keep up with the bot.
+{% callout title="Dynamic Aircraft Parameters" type="note" %}
+All RSO grading parameters (pattern altitudes, spacing, tolerances, TDZ percentages, sink rate limits, bank angle limits, and score weights) scale dynamically per aircraft type (e.g. F-14, F/A-18, F-16) and are tuned server-side.
 {% /callout %}
 
 ## Overview
 
-The **RSO (Runway Safety Officer)** bot quietly watches your overhead patterns and, on every landing attempt, posts a graded debrief card. Think of it as an air traffic controller that never sleeps, never gets bored of watching you land, and will always tell you the truth about your technique.
+The **RSO (Runway Safety Officer)** bot autonomously monitors recovery patterns and, on every landing attempt, posts an objective graded debrief card. Think of it as an air traffic controller and LSO that never sleeps, never gets bored of watching you land, and will always provide clear, standardized feedback on your recovery technique.
 
 For every pattern attempt it generates a 3-tier pass analysis image:
 
-1. **ATC HUD Scorecard** — your grade, the callouts, and the key numbers.
-2. **Overhead Radar Scope** — a top-down view of your flight path relative to the runway.
-3. **Vertical Profile** — altitude against distance, showing each leg of the pattern.
-
-The goal of the RSO is simple: make sure everyone is practicing safe, textbook approaches. Read a few pass cards and the shorthand becomes second nature.
+1. **RSO HUD Scorecard** — overall letter grade, numerical score, shorthand callouts, and key flight parameters.
+2. **Overhead Radar Scope** — top-down view of your flight path relative to the active runway and dynamic Touchdown Zone.
+3. **Vertical Profile** — true altitude plotted against distance, highlighting each pattern leg and glideslope tracking.
 
 ## How to Read Your Pass Card
 
-Here's what a scorecard looks like:
+Here is an example scorecard layout:
 
 ```text
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ PILOT: GTFO | Pilot Man                Airfield: Andersen AFB (PGUA)      Touchdown: +579m (+1898ft) │
+│ PILOT: GTFO | Mongo                Airfield: Andersen AFB (PGUA)      Touchdown: +579m (+1898ft) │
 │ AIRCRAFT: F-14BU                   Runway: 06L (Hdg: 66.4°)           Touchdown Sink: -3 ft/min  │
-│ ATC GRADE: --  [2.4 / 5.0]         Dimensions: 3,020m x 60m           Lineup RMS: 102.5m         │
+│ RSO GRADE: --  [2.4 / 5.0]         Dimensions: 3,020m x 60m           Lineup RMS: 102.5m         │
 │ Calls: -- LO(DW) LUL(F) H(F)       Turn Dynamics: Max 54° (1.7 G)     GP Error: +165ft           │
 │        OF(TD) FLT                                 Avg 26° (1.2 G)                                │
 │ Pattern: LEFT TRAFFIC                                                                            │
@@ -43,163 +41,210 @@ Here's what a scorecard looks like:
 
 **Left Column — Pilot, Aircraft & Technique**
 
-- **PILOT & AIRCRAFT**: Your callsign and the normalized airframe name.
-- **ATC GRADE**: Your overall letter grade and the numerical score out of 5.0. The card's border color matches your grade tier.
-- **Calls**: Standardized shorthand listing every parameter deviation detected during the pass (decoded below).
-- **Pattern**: The traffic pattern or entry you actually flew (e.g. LEFT TRAFFIC, RIGHT TRAFFIC, CROSSWIND ENTRY (LEFT), BASE ENTRY (RIGHT), STRAIGHT-IN).
+- **PILOT & AIRCRAFT**: Your callsign and normalized airframe name.
+- **RSO GRADE**: Overall letter grade and numerical score out of `5.0`. The card border color matches your grade tier.
+- **Calls**: Standardized shorthand listing every parameter deviation detected during the pass (decoded in detail below).
+- **Pattern**: Specific traffic pattern or entry flown (e.g. `LEFT TRAFFIC`, `RIGHT TRAFFIC`, `CROSSWIND ENTRY (LEFT)`, `BASE ENTRY (RIGHT)`, `STRAIGHT-IN`).
 
 **Middle Column — Airfield Telemetry**
 
-- **Airfield**: Active airbase name and 4-letter ICAO identifier (e.g. Andersen AFB (PGUA)).
-- **Runway**: Active runway designation and magnetic heading (e.g. 06L (Hdg: 66.4°)).
+- **Airfield**: Monitored airbase name and 4-letter ICAO identifier (e.g. `Andersen AFB (PGUA)`).
+- **Runway**: Active runway designation and magnetic heading (e.g. `06L (Hdg: 66.4°)`).
 - **Dimensions**: Total runway length and width.
-- **Turn Dynamics**: Peak and average bank angle and normal load factor (G) across your pattern turns.
+- **Turn Dynamics**: Peak and average bank angles and normal load factors (G) pulled across pattern turns.
 
 **Right Column — Touchdown & Approach Diagnostics**
 
-- **Touchdown**: Distance past the runway threshold in meters and feet, plus the classification (IN_TDZ, EARLY_TDZ, LONG, DEEP, or SHORT), and your lateral centerline offset with side (L or R).
-- **Touchdown Sink Rate**: Vertical descent rate at wheel contact, in ft/min.
-- **Lineup RMS**: Root-mean-square cross-track deviation on final approach — essentially, how much you wandered left/right.
-- **GP Error**: Mean altitude deviation from a standard 3.0° glidepath on final.
+- **Touchdown**: Distance past runway threshold in meters and feet, plus classification (`IN_TDZ`, `EARLY_TDZ`, `LONG`, `DEEP`, or `SHORT`), and lateral centerline offset with side (`L` or `R`).
+- **Touchdown Sink Rate**: Vertical descent rate at wheel contact in `ft/min`.
+- **Lineup RMS**: Root-mean-square cross-track deviation on final approach.
+- **GP Error**: Mean altitude deviation from standard 3.0° glidepath on final.
 
 ## Grade Tiers & Scoring Scale
 
 Every approach starts at a base score of **5.0 points**. Deductions are applied for parameter deviations throughout the pattern and landing, and the final score maps to standard military/naval grade brackets:
 
-| Grade            | Symbol | Score     | Card Border       | Meaning & Flight Quality                                                                                          |
-| :--------------- | :----: | :-------- | :---------------- | :---------------------------------------------------------------------------------------------------------------- |
-| **Underlined OK** | _OK_  | 4.5 – 5.0 | Gold             | **Perfect / Exemplary Pass.** Ideal pattern spacing and altitude, stabilized 3.0° glidepath, crisp centerline tracking, and an on-target touchdown in the TDZ. |
-| **OK**           | `OK`   | 3.5 – 4.4 | Green             | **Above-Average Pass.** Minor deviations with prompt, smooth corrections. Safe and stabilized throughout.          |
-| **Fair**         | `(OK)` | 2.5 – 3.4 | Teal              | **Average Pass.** Moderate deviations (slightly wide downwind, slight glidepath error, minor lineup offset) safely managed to touchdown. |
-| **No Grade**     | `--`   | 1.5 – 2.4 | Yellow            | **Below Average Pass.** Significant deviations from standard parameters (excessive wander, flat approach, or landing long), but landed safely. |
-| **Waveoff**      | `WO`   | 0.5 – 1.4 | Red               | **Unsafe Pass / Waveoff.** Gross deviations inside the safety window — floating deep past the TDZ limit, severe wander, or dangerously high/low. |
-| **Cut Pass**     | `C`    | 0.0 – 0.4 | Dark Red          | **Gross Safety Violation.** Landed short of the threshold (undershoot / in the dirt), severe hard landing, or loss of control. |
-
-{% callout title="Waveoff vs Cut Pass" type="warning" %}
-A **WO** means an air traffic controller would have waved you off — you were flying outside of safe parameters, but you landed. A **C** (Cut Pass) means the pass was cut short: you were about to put it in the dirt. If you see either on your card, take a look at the callouts and the radar scope before your next pass.
-{% /callout %}
+| Grade | Symbol | Score Range | Card Border | Meaning & Flight Quality |
+| :--- | :---: | :---: | :---: | :--- |
+| **Underlined OK** | `_OK_` | **4.5 – 5.0** | Green (`#1e7e34`) | **Perfect / Exemplary Pass.** Ideal pattern spacing and altitude, stabilized 3.0° glidepath, crisp centerline tracking, and on-target touchdown in the TDZ. |
+| **OK** | `OK` | **3.5 – 4.4** | Green (`#28a745`) | **Above-Average Pass.** Minor deviations with prompt, smooth corrections. Safe and stabilized throughout. |
+| **Fair** | `(OK)` | **2.5 – 3.4** | Teal (`#17a2b8`) | **Fleet Average Pass.** Moderate deviations (e.g. slightly wide downwind, slight glidepath error, minor lineup offset) safely managed to touchdown. |
+| **No Grade** | `--` | **1.5 – 2.4** | Yellow (`#d39e00`) | **Below Average Pass.** Significant deviations from standard parameters (e.g. excessive wander, flat approach, or landing long), but landed safely. |
+| **Waveoff** | `WO` | **0.5 – 1.4** | Red (`#dc3545`) | **Unsafe Pass / Waveoff.** Gross deviations inside the safety window (floating deep past TDZ limit, severe wander, or dangerously high/low). |
+| **Cut Pass** | `C` | **0.0 – 0.4** | Dark Red (`#721c24`) | **Gross Safety Violation.** Landed short of threshold (undershoot / in the dirt), severe hard landing, or loss of control. |
 
 ## ATC Shorthand Syntax & Location Modifiers
 
-Debrief callouts follow standard ATC shorthand notation:
+Debrief callouts follow standard aviation shorthand notation:
 
-**[Deviation Code] (Phase / Location)**
+$$\text{[Grade]}\quad\text{[Deviation Code]}(\text{Phase / Location})$$
 
-**Example:** `LO(DW) LUL(F) H(F) OF(TD) FLT`
-
-- `LO(DW)`: Low on Downwind
-- `LUL(F)`: Lineup Left on Final
-- `H(F)`: High on Final approach
-- `OF(TD)`: Off centerline at Touchdown
-- `FLT`: Floating / shallow touchdown sink rate
+* **Example:** `(OK) NER(ALT DW) NER(ALT UW) H(F) FLT NER(ALT CW)`
+  * `(OK)`: Fair Pass
+  * `NER(ALT DW)`: Unstable Downwind Altitude (excessive descent/drift on downwind)
+  * `NER(ALT UW)`: Unstable Upwind Altitude (dumping altitude on upwind entry)
+  * `H(F)`: High on Final approach
+  * `FLT`: Flat / float touchdown sink rate
+  * `NER(ALT CW)`: Excessive altitude variation in crosswind break turn
 
 ### Phase / Location Modifiers
 
-| Modifier | Phase / Location | Description                                                                                              |
-| :------- | :--------------- | :------------------------------------------------------------------------------------------------------- |
-| `(DW)`   | **Downwind**     | Downwind leg, parallel to the active runway.                                                              |
-| `(T)`    | **Turns**        | Crosswind, base turn, or the 180° descending turn (break).                                                |
-| `(BC)`   | **Base / Perch** | The base leg or descending perch point.                                                                   |
-| `(F)`    | **Final**        | Final approach segment from roll-out to threshold (evaluated below 200 kts).                               |
-| `(TD)`   | **Touchdown**    | The instant of wheel touchdown on the runway.                                                             |
+| Modifier | Phase / Location | Description |
+| :---: | :--- | :--- |
+| `(DW)` | **Downwind** | Downwind leg parallel to active runway. |
+| `(T)` | **Turns** | Crosswind, base turn, or 180° descending turn. |
+| `(BC)` | **Base / Perch** | The base leg or descending perch point. |
+| `(F)` | **Final** | Final approach segment from roll-out to threshold ($\le 200\text{ kts}$). |
+| `(TD)` | **Touchdown** | Instant of wheel touchdown on the runway. |
 
-## The Deductions
+## Scoring Deductions & Parameter Criteria
 
-### A. Downwind Leg
+GTFO RSO employs an objective **component-based scoring system** where total points sum to **5.0 max**:
+* 🛫 **Downwind Leg**: `1.0 pt max` (Target altitude corridor, spacing, and altitude stability)
+* 🔄 **Pattern Turns**: `1.0 pt max` (Bank angle limits, G-forces, crosswind break stability, base turn descent)
+* 🛬 **Final Approach**: `1.5 pts max` (Lineup centerline, 3.0° glidepath, wander, speed stability)
+* 🎯 **Touchdown**: `1.5 pts max` (TDZ box distance, lateral centerline offset, sink rate & technique)
 
-- **Target Altitude**: Pattern altitude for your category (fixed wing: 1,500+ ft AGL, rotary wing: 1,000+ ft AGL — see [Airfield Operations](/docs/procedures/airfield-operations)).
-- **Tolerance**: ±300 ft from target.
-- **Ideal Lateral Spacing**: 1.0 – 2.0 NM offset from the runway centerline.
+---
 
-| Shorthand    | Meaning                | Condition                                        | Score Impact |
-| :----------- | :--------------------- | :----------------------------------------------- | :----------: |
-| `H(DW)`      | High on Downwind       | Mean altitude more than 300 ft above target      |  -0.5 pts    |
-| `LO(DW)`     | Low on Downwind        | Mean altitude more than 300 ft below target      |  -0.5 pts    |
-| `W(DW)`      | Wide Downwind Spacing  | Lateral offset more than 2.0 NM from centerline  |  -0.3 pts    |
-| `TIGHT(DW)`  | Tight Downwind Spacing | Lateral offset less than 0.7 NM from centerline  |  -0.3 pts    |
+### A. Downwind Leg Evaluation (`1.0 pt max`)
 
-### B. Final Approach Lineup (LU)
+* **Target Altitude Corridor**: Configured via `pattern_alt_min_ft` – `pattern_alt_max_ft` (e.g. `800.0–2500.0 ft` for tactical aircraft; default `2500.0 ft`).
+* **Mean Tolerance**: `±300 ft` (`downwind_alt_tol_ft`).
+* **Ideal Lateral Spacing**: `0.7 – 2.0 NM` offset from runway centerline (up to `2.2 NM` for heavy tactical aircraft).
 
-Evaluated along the extended centerline on the stabilized final approach:
+| Shorthand | Meaning | Condition | Score Impact |
+| :---: | :--- | :--- | :---: |
+| `H(DW)` | High on Downwind | Mean altitude $> +300\text{ ft}$ above target corridor | **-0.5 pts** |
+| `LO(DW)` | Low on Downwind | Mean altitude $> -300\text{ ft}$ below target corridor | **-0.5 pts** |
+| `NER(ALT DW)` | Unstable Downwind Altitude | Altitude std dev $> 75\text{ ft}$ or spread $> 200\text{ ft}$ along downwind | **-0.4 pts** |
+| `NER(ALT UW)` | Unstable Upwind Altitude | Altitude std dev $> 80\text{ ft}$ or spread $> 250\text{ ft}$ on upwind entry | **-0.3 pts** |
+| `W(DW)` | Wide Downwind Spacing | Lateral offset $> 2.0\text{ NM}$ ($> 2.2\text{ NM}$ for F-14) | **-0.3 pts** |
+| `TIGHT(DW)` | Tight Downwind Spacing | Lateral offset $< 0.7\text{ NM}$ ($< 0.8\text{ NM}$ for F-14) | **-0.3 pts** |
 
-| Shorthand     | Meaning                  | Condition                                   | Score Impact |
-| :------------ | :----------------------- | :------------------------------------------ | :----------: |
-| `LUR(F)`      | Lineup Right on Final    | Mean cross-track offset more than 15 m right |  -0.5 pts    |
-| `LUL(F)`      | Lineup Left on Final     | Mean cross-track offset more than 15 m left  |  -0.5 pts    |
-| *(Wander)*    | Lineup Wander / S-Turns  | Cross-track RMS wander more than 30 m        |  -0.4 pts    |
+---
 
-### C. Final Approach Glidepath (GP) & Speed
+### B. Final Approach Lineup (`LU`)
 
-Evaluated against a standard **3.0° descent gradient** (theoretical height at distance x from the threshold: 15.24m + x × tan 3°, with 15.24m = 50 ft Threshold Crossing Height). The glideslope evaluation applies exclusively to the stabilized final approach segment (below 200 kts):
+Evaluated along extended centerline on the stabilized final approach segment:
 
-| Shorthand   | Meaning            | Condition                                               | Score Impact |
-| :---------- | :----------------- | :------------------------------------------------------ | :----------: |
-| `H(F)`      | High on Final      | Mean altitude error more than 80 ft above the 3.0° slope |  -0.6 pts    |
-| `LO(F)`     | Low on Final       | Mean altitude error more than 80 ft below the 3.0° slope |  -0.7 pts    |
-| `NER(SPD)`  | Unstable Airspeed  | Airspeed standard deviation on final more than 15 kts   |  -0.4 pts    |
+| Shorthand | Meaning | Condition | Score Impact |
+| :---: | :--- | :--- | :---: |
+| `LUR(F)` | Lineup Right on Final | Mean cross-track offset $> +15.0\text{ m}$ right | **-0.5 pts** |
+| `LUL(F)` | Lineup Left on Final | Mean cross-track offset $< -15.0\text{ m}$ left | **-0.5 pts** |
+| *(Wander)* | Lineup Wander / S-Turns | Cross-track RMS wander $> 30.0\text{ m}$ | **-0.4 pts** |
 
-### D. Touchdown Distance
+---
 
-Measured longitudinally along the runway relative to the physical landing threshold (x = 0). Touchdown allowances scale dynamically as a **percentage of total runway length**, adapting seamlessly between long intercontinental runways (e.g. 3,020 m / 9,908 ft at Andersen AFB) and short tactical fields:
+### C. Final Approach Glidepath (`GP`) & Speed (`1.5 pts max`)
 
-| Shorthand     | Classification       | Runway Distance Past Threshold      | Evaluation & Penalty                                                        |
-| :------------ | :------------------- | :---------------------------------- | :-------------------------------------------------------------------------- |
-| `LS`          | **Landed Short**     | x < 0 m (in the dirt / before threshold) | **Severe Safety Violation.** Score capped at 0.5 max (C / WO).            |
-| `EARLY_TDZ`   | Early Touchdown      | 0 m to 3% of runway length          | Touched down right at the threshold; no score penalty.                       |
-| `IN_TDZ`      | **On Target (TDZ)**  | 3% to 25% of runway length          | **Optimal Target Box.** Full points awarded (0 penalty).                      |
-| `LL`          | **Landed Long**      | 25% to 40% of runway length         | Long landing (-0.6 pts).                                                      |
-| `DLL`         | **Deep Landing**     | more than 40% of runway length      | Excessive runway consumption; triggers a Waveoff (-1.5 pts, score capped at 1.0). |
+Evaluated against a standard **3.0° descent gradient** ($h(x) = 15.24\text{m} + |x|\cdot\tan 3^\circ$, with $15.24\text{m} = 50\text{ ft}$ Threshold Crossing Height). The glideslope evaluation applies exclusively to the stabilized final approach segment ($\le 200\text{ kts}$):
 
-**Example for Andersen AFB (3,020 m / 9,908 ft runway):**
+| Shorthand | Meaning | Condition | Score Impact |
+| :---: | :--- | :--- | :---: |
+| `H(F)` | High on Final | Mean altitude error $> +80\text{ ft}$ above 3.0° slope | **-0.6 pts** |
+| `LO(F)` | Low on Final | Mean altitude error $> -80\text{ ft}$ below 3.0° slope | **-0.7 pts** |
+| `NER(GP)` | Glidepath Wander | Glidepath RMS error $> 50.0\text{ ft}$ on final | **-0.4 pts** |
+| `NER(SPD)` | Unstable Airspeed | Airspeed standard deviation on final $> 15.0\text{ kts}$ | **-0.4 pts** |
 
-- TDZ min = 91 m (297 ft)
-- TDZ max = 755 m (2,477 ft) — touching down 2,400 ft down the runway is safely on target.
-- Long limit = 1,208 m (3,963 ft) — past this it's a waveoff.
+---
 
-### E. Touchdown Centerline Alignment & Sink Rate
+### D. Touchdown Distance (`rx` / `local_x`)
 
-- **Centerline Offset**: Measured laterally from the runway center stripe (y = 0).
-- **Sink Rate**: Calculated from the vertical descent rate over the final 2.5 seconds before wheel contact.
+Measured longitudinally along the runway relative to the physical landing threshold ($x = 0$). Touchdown allowances scale dynamically as a **percentage of total runway length**, adapting seamlessly between long intercontinental runways (e.g. 3,020m / 9,908 ft Andersen AFB) and short tactical fields:
 
-| Shorthand | Meaning            | Condition                              | Penalty              |
-| :-------- | :----------------- | :------------------------------------- | :------------------: |
-| *(None)*  | On Centerline      | Offset within 15 m                     | 0 pts                |
-| `OF(TD)`  | Off Centerline     | Offset more than 15 m (left or right)  |  -0.6 pts            |
-| *(None)*  | Normal Sink Rate   | -100 to -800 ft/min                    | 0 pts                |
-| `FLT`     | Floating Flare     | sink rate above -100 ft/min            | Warning callout (no deduction) |
-| `HRL`     | **Hard Landing**   | sink rate below -800 ft/min            |  -1.0 pt             |
+| Shorthand | Classification | Runway Distance Past Threshold | Evaluation & Penalty |
+| :---: | :--- | :--- | :--- |
+| `LS` | **Landed Short** | $x < 0\text{ m}$ (in the dirt / before threshold) | **Severe Safety Violation.** TD score `0.0`, total pass score capped at `0.5` max (`C` / `WO`). |
+| `EARLY_TDZ` | Early Touchdown | $0\text{ m} \le x \le \text{TDZ}_{\min}$ ($0\% \text{ to } 3\% \text{ of } L$) | Touched down immediately at threshold (**-0.2 pts**). |
+| `IN_TDZ` | **On Target (TDZ)** | $\text{TDZ}_{\min} < x \le \text{TDZ}_{\max}$ ($3\% \text{ to } 25\% \text{ of } L$) | **Optimal Target Box.** Full points awarded (0 penalty). |
+| `LL` | **Landed Long** | $\text{TDZ}_{\max} < x \le \text{TDZ}_{\text{long}}$ ($25\% \text{ to } 40\% \text{ of } L$) | Long landing (**-0.6 pts**). |
+| `DLL` | **Deep Landing** | $x > \text{TDZ}_{\text{long}}$ ($> 40\% \text{ of } L$) | Excessive runway consumption; triggers Waveoff (**-1.5 pts**, total score capped at `1.0`). |
 
-### F. Pattern Turns, Bank Angle & G-Forces
+**Example for Andersen AFB (3,020m / 9,908 ft runway):**
+* $\text{TDZ}_{\min} = 91\text{ m}$ ($297\text{ ft}$)
+* $\text{TDZ}_{\max} = 755\text{ m}$ ($2,477\text{ ft}$) — *Touching down 2,400 ft down runway is safely on target.*
+* $\text{TDZ}_{\text{long}} = 1,208\text{ m}$ ($3,963\text{ ft}$) — *Waveoff threshold.*
 
-In coordinated turns, the aerodynamic load factor is directly governed by bank angle: G = 1 / cos(bank).
+---
 
-- 30° bank → 1.15 G
-- 45° bank → 1.41 G
-- 60° bank → 2.00 G (tactical limit)
+### E. Touchdown Centerline Alignment & Sink Rate (`1.5 pts max`)
 
-| Shorthand | Meaning              | Description                                                    | Score Impact |
-| :-------- | :------------------- | :------------------------------------------------------------- | :----------: |
-| `OB(T)`   | **Overbank in Turn** | Bank angle exceeded the safety limit (more than 60° / 2.0 G) in a turn | -0.4 pts    |
+* **Centerline Offset**: Measured laterally from the runway center stripe ($y = 0$).
+* **Sink Rate**: Calculated from vertical descent velocity over the final 2.5 seconds before wheel contact.
+
+| Shorthand | Meaning | Condition | Penalty |
+| :---: | :--- | :--- | :---: |
+| *(None)* | On Centerline | Offset $\le 15.0\text{ m}$ | **0 pts** |
+| `OF(TD)` | Off Centerline | Offset $> 15.0\text{ m}$ (Right or Left) | **-0.5 pts** |
+| *(None)* | Normal Sink Rate | $-100\text{ to } -800\text{ ft/min}$ (flared) / $-100\text{ to } -900\text{ ft/min}$ (carrier) | **0 pts** |
+| `HRL` | **Hard Landing** | Sink rate $< -800\text{ ft/min}$ (or $< -900\text{ ft/min}$ on carrier gear) | **-0.8 pts** |
+| `FLT` | **Float / Flat Touchdown** | Sink rate $> -70\text{ ft/min}$ (always on carrier; on flared only if deep/long) | **-0.2 pts** |
+| `BLN` | **Ballooned Flare** | Flare induced vertical climb rate $> +150\text{ ft/min}$ right before touchdown | **-0.2 pts** |
+
+---
+
+### F. Pattern Turns, Bank Angle, G-Forces & Altitude Stability (`1.0 pt max`)
+
+In coordinated turns, aerodynamic load factor is directly governed by bank angle $\phi$:
+$$G = \frac{1}{\cos(\phi)} = \sec(\phi)$$
+* $30^\circ\text{ bank} \to 1.15\text{ G}$
+* $45^\circ\text{ bank} \to 1.41\text{ G}$
+* $60^\circ\text{ bank} \to 2.00\text{ G}$ (Standard tactical limit)
+* Up to $90.0^\circ$ authorized for carrier break turns.
+
+| Shorthand | Meaning | Description | Score Impact |
+| :---: | :--- | :--- | :---: |
+| `OB(T)` | **Overbank in Turn** | Bank angle exceeded safety limit ($> 60^\circ\text{–}90^\circ$ / $> 3.5\text{ G}$) | **-0.6 pts** |
+| *(High G)* | **High G in Turn** | Normal acceleration exceeded airframe turn limit ($> 3.5\text{ G}$) | **-0.4 pts** |
+| `NER(ALT CW)` | **Crosswind Alt Variation** | Altitude spread in break/crosswind turn $> 500\text{ ft}$ | **-0.3 pts** |
+| `BLN(B)` | **Base Turn Balloon** | Climbed $> 150\text{ ft}$ during base turn instead of descending | **-0.3 pts** |
+
+---
+
+### G. Flared Landing vs. Non-Flared (Carrier-Style) Recovery Rules
+
+Aircraft recovery techniques differ fundamentally between **land-based USAF/civil aircraft** and **naval carrier-capable aircraft**. GTFO RSO automatically detects airframe configuration (`flared_landing` parameter) and tailors touchdown grading accordingly:
+
+```text
+┌───────────────────────────────────┬─────────────────────────────────────────────────────────┐
+│ Flared Aircraft (USAF / Civil)    │ F-16C Viper, A-10C, F-15C/E, Su-27/25, JF-17, Standard  │
+│ • Technique Required              │ Roundout and flare to reduce sink rate before touchdown │
+│ • Normal Touchdown Sink Rate      │ -100 to -500 ft/min (shallow/flat touchdown expected)   │
+│ • Float Evaluation (FLT)          │ ONLY penalized if pilot floats deep past target TDZ     │
+│ • Balloon Evaluation (BLN)        │ Penalized (-0.2 pts) if flare climbs > +150 ft/min      │
+│ • Hard Landing Threshold (HRL)    │ < -800 ft/min (-0.8 pts)                                │
+│ • Maximum Pattern Bank Limit      │ 60.0° – 75.0° tactical limit                            │
+├───────────────────────────────────┼─────────────────────────────────────────────────────────┤
+│ Non-Flared Aircraft (Naval)       │ F/A-18C Hornet, F-14A/B Tomcat, T-45 Goshawk, AV-8B     │
+│ • Technique Required              │ Strict no-flare constant descent angle into TDZ         │
+│ • Normal Touchdown Sink Rate      │ -250 to -800 ft/min (firm, controlled plant)            │
+│ • Float Evaluation (FLT)          │ ALWAYS penalized (-0.2 pts) if sink rate > -70 ft/min   │
+│ • Balloon Evaluation (BLN)        │ N/A (no flare permitted)                                │
+│ • Hard Landing Threshold (HRL)    │ < -900 ft/min (heavy-duty carrier gear)                 │
+│ • Maximum Pattern Bank Limit      │ Up to 90.0° (carrier tactical overhead break)           │
+└───────────────────────────────────┴─────────────────────────────────────────────────────────┘
+```
 
 ## Pattern Stage Classification
 
-Flight points inside a pass are segmented sequentially and continuously into distinct stages, with no gaps in between:
+Flight points inside a pass are segmented sequentially and continuously into distinct stages without intermediate gaps:
 
-1. **TRANSITION** — Long-range entry or initial transit towards the airfield prior to entering the pattern.
-2. **UPWIND** — Initial overhead break run-in or departure climbout along the runway heading. High-speed initial passes (above 200 kts) are classified as UPWIND so break entry is never confused with final approach.
-3. **CROSSWIND** — The perpendicular entry leg (beginning roughly 1.0 NM / 2,000 m from the runway centerline) or the overhead break turn.
-4. **DOWNWIND** — Downwind leg parallel to the active runway on the reciprocal heading.
-5. **BASE** — Continuous descending turn from downwind towards the final approach course.
-6. **FINAL** — Stabilized final approach trajectory aligned with the runway (below 200 kts).
-7. **LANDING** — Touchdown point and ground deceleration rollout.
+1. ⚪ **`TRANSITION`**: Long-range entry or initial transit towards the airfield prior to entering the pattern.
+2. 🔵 **`UPWIND`**: Initial overhead break run-in or departure climbout along runway heading ($\text{diff} \le 35^\circ$ or $\ge 325^\circ$). High-speed initial passes ($> 200\text{ kts}$) are classified as `UPWIND` to ensure break entry is not confused with final approach.
+3. 🔷 **`CROSSWIND`**: Perpendicular entry leg (begins $\sim 1.0\text{ NM}$ / $2,000\text{m}$ from runway centerline) or the overhead break turn.
+4. 🟠 **`DOWNWIND`**: Downwind leg parallel to the active runway on reciprocal heading ($135^\circ \le \text{diff} \le 225^\circ$).
+5. 🟣 **`BASE`**: Continuous descending turn from downwind towards the final approach course.
+6. 🟢 **`FINAL`**: Stabilized final approach trajectory aligned with the runway ($\le 200\text{ kts}$).
+7. 🔴 **`LANDING`**: Touchdown point and ground deceleration rollout.
 
 ### Pattern Types Identified
 
-- **LEFT TRAFFIC / RIGHT TRAFFIC**: Standard overhead break or full circuit entry with an upwind leg.
-- **CROSSWIND ENTRY (LEFT) / (RIGHT)**: Perpendicular pattern entry directly onto the crosswind leg.
-- **DOWNWIND ENTRY (LEFT) / (RIGHT)**: 45° or direct entry into the downwind leg.
-- **BASE ENTRY (LEFT) / (RIGHT)**: Direct base leg entry.
-- **STRAIGHT-IN**: Direct final approach without flying downwind.
+- **`LEFT TRAFFIC` / `RIGHT TRAFFIC`**: Standard overhead break or full circuit entry with an upwind leg.
+- **`CROSSWIND ENTRY (LEFT)` / `CROSSWIND ENTRY (RIGHT)`**: Perpendicular pattern entry directly onto the crosswind leg.
+- **`DOWNWIND ENTRY (LEFT)` / `DOWNWIND ENTRY (RIGHT)`**: 45° or direct entry into the downwind leg.
+- **`BASE ENTRY (LEFT)` / `BASE ENTRY (RIGHT)`**: Direct base leg entry.
+- **`STRAIGHT-IN`**: Direct final approach without flying downwind.
 
 ## The Visual Debrief
 
@@ -207,12 +252,12 @@ The middle and bottom panels of your pass card provide the spatial and vertical 
 
 ### Overhead Radar Scope (Middle Panel)
 
-- **Guaranteed 5.0+ NM Lateral Scope Window** — the lateral axis spans at least 5.0 NM (9,260 m), so wide downwind patterns (up to 3.5–4.0 NM out) remain completely visible without edge truncation.
+- **Guaranteed $\ge 5.0\text{ NM}$ Lateral Scope Window** — the lateral axis spans at least 5.0 NM (9,260m), so wide downwind patterns (up to 3.5–4.0 NM out) remain completely visible without edge truncation.
 - **Runway Markings & References**:
   - **Green Dashed Box**: Dynamic Target Touchdown Zone (TDZ), scaled to runway length.
   - **Red X**: The exact coordinate of wheel touchdown.
-  - **Parallel Runways**: Rendered with exact heading, length, and displacement (e.g. 06R at Andersen AFB).
-  - **Downwind Range Badges**: Distance guides at 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, and 4.0 NM offset from the runway centerline.
+  - **Parallel Runways**: Rendered with exact heading, length, and displacement (e.g. `06R` at Andersen AFB).
+  - **Downwind Range Badges**: Distance guides at `1.0 NM`, `1.5 NM`, `2.0 NM`, `2.5 NM`, `3.0 NM`, `3.5 NM`, and `4.0 NM` offset from runway centerline.
   - **North Arrow**: Magnetic and True North orientation.
 
 ### Vertical Profile Chart (Bottom Panel)
@@ -223,16 +268,11 @@ Plots true Altitude MSL (ft) against total Distance Along Flown Path (m). Contin
 
 A quick reference for what the RSO expects from a clean pass:
 
-- **Pattern altitude**: On target for your category, within ±300 ft.
-- **Downwind spacing**: 1.0 – 2.0 NM from the centerline.
-- **Final**: On centerline, stabilized, on the 3.0° glideslope, steady airspeed.
-- **Turns**: Coordinated, 60° bank (2.0 G) or less.
-- **Touchdown**: In the TDZ, on the centerline, sink rate between -100 and -800 ft/min.
-
-Hit all of those and the grade takes care of itself.
-
-{% callout title="Grading Parameters" %}
-All RSO grading parameters (pattern altitude, tolerances, TDZ percentages, sink rate limits, etc.) are tuned server-side via configuration — you don't need to do anything on your end.
-{% /callout %}
+* **Upwind entry**: Enter level along runway heading at pattern entry altitude corridor.
+* **Downwind**: Fly parallel to the runway, maintaining level altitude corridor ($\le 200\text{ ft}$ spread / $\pm 75\text{ ft}$ std dev) and proper spacing ($0.7\text{--}2.0\text{ NM}$) until the abeam point.
+* **Base turn**: Continuous descending turn without climbing/ballooning ($> 150\text{ ft}$).
+* **Final**: On centerline, stabilized on 3.0° glideslope ($\le 80\text{ ft}$ error, $\le 50\text{ ft}$ RMS wander), steady airspeed ($\le 15\text{ kts}$ std dev).
+* **Turns**: Coordinated, within bank angle limit ($60^\circ$ tactical / $90^\circ$ naval) and $\le 3.5\text{ G}$.
+* **Touchdown**: In the TDZ ($3\%\text{--}25\%$ of runway length), on centerline ($\le 15\text{ m}$), firm controlled sink rate ($-100\text{ to } -800\text{ ft/min}$ for flared, $-250\text{ to } -800\text{ ft/min}$ for carrier).
 
 For the standard operating procedures behind all of this, see [Airfield Operations](/docs/procedures/airfield-operations).
