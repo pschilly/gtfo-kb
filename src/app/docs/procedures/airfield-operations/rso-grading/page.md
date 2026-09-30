@@ -9,7 +9,7 @@ nextjs:
 {% grade_lookup mode="rso" /%}
 
 {% callout title="Dynamic Aircraft Parameters" type="note" %}
-All RSO grading parameters (pattern altitudes, spacing, tolerances, TDZ percentages, sink rate limits, bank angle limits, and score weights) scale dynamically per aircraft type (e.g. F-14, F/A-18, F-16) and are tuned server-side.
+All RSO grading parameters (pattern altitudes, spacing, tolerances, TDZ percentages, sink rate limits, bank angle limits, and score weights) scale dynamically per aircraft type (e.g. F-14, F/A-18, F-16, JF-17) and are tuned server-side. For full configuration parameters and baseline comparisons across all supported aircraft, see [Airframe Grading Parameters](/docs/procedures/airfield-operations/rso-grading/airframes).
 {% /callout %}
 
 ## Overview

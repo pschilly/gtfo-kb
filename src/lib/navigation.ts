@@ -65,6 +65,10 @@ export const navigation = [
         href: '/docs/procedures/airfield-operations/rso-grading',
       },
       {
+        title: 'RSO Airframe Parameters',
+        href: '/docs/procedures/airfield-operations/rso-grading/airframes',
+      },
+      {
         title: 'Reading LSO Grading',
         href: '/docs/procedures/airfield-operations/lso-grading',
       },
