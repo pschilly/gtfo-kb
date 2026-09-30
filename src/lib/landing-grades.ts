@@ -336,6 +336,18 @@ export const RSO_CALLOUTS: Record<string, string> = {
   OF: 'Off centerline — more than 15 m left or right of the centerline at touchdown.',
 }
 
+/** Lookup map indexing RSO callouts with and without spaces for robust matching. */
+const NORMALIZED_RSO_CALLOUTS: Record<string, string> = (() => {
+  const norm: Record<string, string> = {}
+  for (const [key, explanation] of Object.entries(RSO_CALLOUTS)) {
+    norm[key] = explanation
+    norm[key.trim()] = explanation
+    norm[key.replace(/\s+/g, '')] = explanation
+    norm[key.trim().replace(/\s+/g, ' ')] = explanation
+  }
+  return norm
+})()
+
 /** Matches any known RSO callout (phase-modified or standalone), longest first. */
 const RSO_CALL_RE = (() => {
   const escaped = Object.keys(RSO_CALLOUTS)
@@ -405,8 +417,16 @@ export function decodeRsoCalls(text: string): CalloutDecoding | null {
   const matches = [...text.matchAll(RSO_CALL_RE)].map((m) => m[0])
   if (matches.length === 0) return null
   const explanations = matches.map((call) => {
-    const key = call.replace(/\s+/g, '')
-    return RSO_CALLOUTS[key] ?? null
+    const raw = call.trim()
+    const singleSpace = raw.replace(/\s+/g, ' ')
+    const noSpace = raw.replace(/\s+/g, '')
+    return (
+      NORMALIZED_RSO_CALLOUTS[raw] ??
+      NORMALIZED_RSO_CALLOUTS[singleSpace] ??
+      NORMALIZED_RSO_CALLOUTS[noSpace] ??
+      RSO_CALLOUTS[raw] ??
+      null
+    )
   })
   // Don't report on pure noise (nothing we actually know)
   if (explanations.every((e) => e === null)) return null
