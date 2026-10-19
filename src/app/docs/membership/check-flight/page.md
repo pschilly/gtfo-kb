@@ -41,7 +41,7 @@ It does not matter what callsign you choose - but ensure that it is used consist
 
 ## Lets go!
 
-Choose between either a [fixed wing](/docs/membership/check-flight/fixed-wing) or a [rotary wing](/docs/membership/check-flight/rotary-wing) check flight. Once you have an idea as to which path you want to go down, head on over to the **42nd Recieving Squadron** discord channel and request a check flight.
+Choose between either a [fixed wing](/docs/membership/check-flight/fixed-wing) or a [rotary wing](/docs/membership/check-flight/rotary-wing) check flight. Once you have an idea as to which path you want to go down, head on over to the **Qualification Chat** discord channel and request a check flight from an instructor of the airframe you wish to fly. If you are unsure who an instructor is, use the `/find-an-instructor` command in that channel and pick the airframe.
 
 ---
 
